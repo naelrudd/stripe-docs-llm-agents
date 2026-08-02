@@ -1,0 +1,57 @@
+name: Refresh docs
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install llms-mirror
+        run: pip install llms-mirror
+
+      - name: Mirror docs
+        run: llms-mirror mirror https://docs.stripe.com/llms.txt --out . --no-git --redact
+
+      - name: Restore custom artifacts
+        run: git checkout -- README.md NOTICE.md rag.py
+
+      - name: Write LAST-SYNC.txt
+        run: |
+          pages=$(find . -name "*.md" -not -path "./.git/*" -not -name README.md -not -name INDEX.md -not -name NOTICE.md | wc -l)
+          printf 'source: %s\npages: %s\nsynced: %s\n' \
+            'https://docs.stripe.com/llms.txt' "$pages" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            > LAST-SYNC.txt
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "docs: refresh from $(date +%F)"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push
+        if: steps.commit.outputs.changed == 'true'
+        run: git push

@@ -1,0 +1,4 @@
+rag_chroma/
+__pycache__/
+*.pyc
+.DS_Store
