@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 483
+Pages: 484
 
 | Path | First heading |
 |---|---|
@@ -342,6 +342,7 @@ Pages: 483
 | [payments/wallets.md](https://docs.stripe.com/payments/wallets.md) | Wallets |
 | [payments-api/tour.md](https://docs.stripe.com/payments-api/tour.md) | Tour of the API |
 | [payments.md](https://docs.stripe.com/payments.md) | Payments |
+| [payouts/multi-currency-settlement.md](https://docs.stripe.com/payouts/multi-currency-settlement.md) | Multi-currency settlement |
 | [payouts/multicurrency-settlement.md](https://docs.stripe.com/payouts/multicurrency-settlement.md) | Multi-currency settlement |
 | [payouts.md](https://docs.stripe.com/payouts.md) | Receive payouts |
 | [products-prices/overview.md](https://docs.stripe.com/products-prices/overview.md) | Overview |
