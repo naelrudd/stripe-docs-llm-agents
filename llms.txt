@@ -21,7 +21,7 @@ version first.
 - [Refund and cancel payments](https://docs.stripe.com/refunds.md): Learn how to cancel or refund a payment.
 - [Security at Stripe](https://docs.stripe.com/security.md): Learn how Stripe handles security.
 - [Build a Stripe-hosted checkout page](https://docs.stripe.com/checkout/quickstart.md)
-- [Build an advanced integration](https://docs.stripe.com/payments/quickstart.md)
+- [Build a custom checkout page](https://docs.stripe.com/payments/quickstart.md)
 - [Build a pre-built subscription page with Stripe Checkout](https://docs.stripe.com/billing/quickstart.md)
 - [Set up and deploy a webhook](https://docs.stripe.com/webhooks/quickstart.md): Learn how to set up and deploy a webhook to listen to events from Stripe.
 - [Types of events](https://docs.stripe.com/api/events/types.md)
@@ -44,7 +44,7 @@ Acquire more customers and improve conversion by offering the most popular payme
 - [eftpos Australia](https://docs.stripe.com/payments/eftpos-australia.md): Learn about eftpos Australia, a common payment method in Australia.
 - [Stablecoin payments](https://docs.stripe.com/payments/stablecoin-payments.md): Learn about accepting payments in stablecoins.
 - [Buy now, pay later](https://docs.stripe.com/payments/buy-now-pay-later.md): Learn about buy now, pay later methods with Stripe.
-- [Afterpay and Clearpay payments](https://docs.stripe.com/payments/afterpay-clearpay.md): Offer your customers flexible financing while getting paid upfront with Afterpay (also known as Clearpay in the UK)..
+- [Afterpay and Clearpay payments](https://docs.stripe.com/payments/afterpay-clearpay.md): Offer your customers flexible financing while getting paid upfront with Afterpay (also known as Clearpay in the UK).
 - [Affirm payments](https://docs.stripe.com/payments/affirm.md): Offer your US, Canadian, and United Kingdom customers flexible financing while getting paid upfront with Affirm.
 - [Klarna payments](https://docs.stripe.com/payments/klarna.md): Allow customers to make flexible payments while getting paid upfront with Klarna.
 - [Bank redirects](https://docs.stripe.com/payments/bank-redirects.md): Learn about bank redirects with Stripe.
@@ -298,7 +298,7 @@ For new integrations, use the Accounts v2 API as described in /connect/accounts-
 - [1099-NEC form state requirements](https://docs.stripe.com/connect/1099-nec.md): View the state requirements for 1099-NEC forms.
 
 ## Issuing
-Use the Stripe Issuing API to create, manage, and distribute payment cards for your business. Issuing is available in the United States, United Kingdom, and European Economic Area. You can create your own card designs, and approve transactions in real time. You can build Stripe Issuing alongside [Stripe Treasury](https://docs.stripe.com/treasury.md) to attach cards to open loop wallets, and offer your users additional money movement options.
+Use the Stripe Issuing API to create, manage, and distribute payment cards for your business. Issuing is available in the United States, United Kingdom, and European Economic Area. You can create your own card designs, and approve transactions in real time. You can build Stripe Issuing alongside [Treasury for Platforms](https://docs.stripe.com/treasury/connect/v2.md) to attach cards to open loop wallets, and offer your users additional money movement options.
 
 - [How Issuing works](https://docs.stripe.com/issuing/how-issuing-works.md): Learn how to start building a card program with Stripe Issuing.
 - [Issuing merchant categories](https://docs.stripe.com/issuing/categories.md): Learn about the available categories that businesses are grouped in.
@@ -372,7 +372,7 @@ Stripe Climate is the easiest way to help emerging permanent carbon removal tech
 ## Tax
 Automate sales tax, VAT, and GST compliance on all your transactions—low or no code integrations available. You can integrate Stripe Tax with Payment Links or the Checkout Sessions API and use it for subscriptions and invoices. You can also create custom payment flows or integrate Stripe Tax as a platform with Connect.
 - [Set up Stripe Tax](https://docs.stripe.com/tax/set-up.md): Enable Stripe Tax to automatically calculate and collect tax.
-- [Product tax codes](https://docs.stripe.com/tax/tax-codes.md): Stripe Tax uses product tax codes to determine a product's tax rate.
+- [Product tax codes](https://docs.stripe.com/tax/tax-codes.md): Authoritative complete list of active Stripe Tax product tax code (`txcd_`) identifiers and their definitions. Use only exact `txcd_` values from this list; never infer or construct an identifier.
 - [How Stripe Tax works](https://docs.stripe.com/tax/how-tax-works.md): Learn how Stripe helps you automate tax compliance.
 - [Standalone Tax API](https://docs.stripe.com/tax/standalone-tax-api.md): Use the Tax Calculations and Transactions APIs directly for shipping, tax-inclusive pricing, and more.
 - [Specify product tax codes and tax behavior](https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md): Add tax codes and tax behavior to your products and prices to automatically calculate tax.
@@ -391,7 +391,7 @@ Automate sales tax, VAT, and GST compliance on all your transactions—low or no
 - [Collect taxes for recurring payments](https://docs.stripe.com/billing/taxes/collect-taxes.md): Learn how to collect and report taxes for recurring payments.
 - [Account and customer tax IDs with Invoicing](https://docs.stripe.com/tax/invoicing/tax-ids.md): Learn about storing, validating, and rendering tax ID numbers for Invoicing.
 - [Update existing subscriptions](https://docs.stripe.com/tax/subscriptions/update.md): Learn how to update existing subscriptions to Stripe Tax.
-- [Tax for marketplaces](https://docs.stripe.com/tax/tax-for-marketplaces.md): Learn about tax requirements for platforms and marketplaces, and how to enable Stripe Tax to collect tax on transactions when the Connect platform is liable.
+- [Tax for marketplaces](https://docs.stripe.com/tax/tax-for-marketplaces.md): Learn about indirect tax requirements for platforms and marketplaces, and how to enable Stripe Tax to collect tax on transactions when the Connect platform is liable.
 - [Stripe Tax](https://docs.stripe.com/tax.md): Automate sales tax, VAT, and GST compliance on all your transactions.
 - [Use the Settings API to configure Stripe Tax](https://docs.stripe.com/tax/settings-api.md): Learn how to configure tax settings, and check whether an account is ready to perform tax calculations.
 - [Tax settings](https://docs.stripe.com/connect/supported-embedded-components/tax-settings.md): Learn how to allow connected accounts to set up Stripe Tax.
@@ -512,47 +512,36 @@ Automate your accrual accounting process with Stripe Revenue Recognition. Revenu
 - [Error handling for data import](https://docs.stripe.com/revenue-recognition/data-import/error-handling.md): Learn how to handle and recover from errors received when importing revenue recognition data.
 - [Revenue Recognition reports in Sigma and SDP](https://docs.stripe.com/revenue-recognition/reports/sigma-and-sdp.md): Run prebuilt Revenue Recognition reports or build custom queries in Sigma.
 
-## Treasury
-Learn how to provide financial services to connected accounts. Stripe Treasury is an embedded finance API for Stripe *Connect* platforms that allows you to embed financial services in your product. Stripe provides the infrastructure in partnership with trusted banks. Use Treasury to enable your connected accounts to hold funds, pay bills, earn cash back, and manage their cash flow. Many platforms using Connect also use [Stripe Issuing](https://docs.stripe.com/issuing.md) to issue cards for accessing Treasury accounts. To learn more about Treasury, see its [features](#features).
-
-- [Treasury for platforms requirements](https://docs.stripe.com/treasury/connect/requirements.md): Understand the requirements for using Treasury for platforms.
-- [Using Treasury for platforms to move money](https://docs.stripe.com/treasury/connect/examples/moving-money.md): Learn how to use SetupIntents and PaymentMethods, and how to verify bank accounts with Treasury for platforms.
-- [Payouts and top-ups from your payments balance](https://docs.stripe.com/treasury/connect/moving-money/payouts.md): Learn how to move money between payments account balances and financial account balances.
-- [Treasury for platforms product marketing, design, and compliance guidelines](https://docs.stripe.com/treasury/connect/compliance.md): Learn how to keep your Treasury for platforms program and marketing campaigns compliant.
-- [Treasury Disclosure Component](https://docs.stripe.com/treasury/connect/compliance/disclosure.md): Learn how to embed a Treasury disclosure component directly onto your website.
-- [Money movement timelines](https://docs.stripe.com/treasury/connect/money-movement/timelines.md): Learn about the timelines for various types of money movement with Treasury for platforms.
-- [Moving money with using InboundTransfer objects](https://docs.stripe.com/treasury/connect/moving-money/into/inbound-transfers.md): Learn how to transfer money from another account you own into a financial account.
-- [Working with SetupIntents, PaymentMethods, and BankAccounts](https://docs.stripe.com/treasury/connect/moving-money/working-with-bankaccount-objects.md): Set up money movements with Treasury for platforms.
-- [Working with financial accounts](https://docs.stripe.com/treasury/connect/account-management/financial-accounts.md): Use financial accounts to store, send, and receive funds.
-- [Moving money into financial accounts](https://docs.stripe.com/treasury/connect/moving-money/moving-money-into-financial-accounts.md): Learn the requests available to move money into financial accounts.
-- [Treasury for platforms fraud guide](https://docs.stripe.com/treasury/connect/examples/fraud-guide.md): Learn best practices for managing fraud as a platform.
-- [Working with balances and transactions](https://docs.stripe.com/treasury/connect/account-management/working-with-balances-and-transactions.md): Learn about financial account balances and the effect transactions have on them.
-- [Working with connected accounts](https://docs.stripe.com/treasury/connect/account-management/connected-accounts.md): Request the treasury capability and collect onboarding requirements for your connected accounts.
-- [Moving money using OutboundPayment objects](https://docs.stripe.com/treasury/connect/moving-money/out-of/outbound-payments.md): Learn how to create outbound payments to move money out of financial accounts to third parties.
-- [Customize your migration to Fifth Third Bank](https://docs.stripe.com/treasury/connect/fifth-third-migration.md): Develop a custom plan to migrate your existing Treasury for platforms integration to Fifth Third Bank.
-- [Use Treasury for platforms and Issuing to set up financial accounts and cards](https://docs.stripe.com/treasury/connect/examples/financial-accounts.md): Follow a sample Treasury for platforms and Issuing integration that sets up a financial account and creates cards.
-- [Administrative facilitation fee report](https://docs.stripe.com/reports/administrative-facilitation-fee-report.md): Analyze your administrative facilitation fees by date and account.
-- [Treasury for platforms connected account onboarding guide](https://docs.stripe.com/treasury/connect/examples/onboarding-guide.md): Learn how to onboard your connected accounts.
-- [Get started with API access to Treasury for platforms](https://docs.stripe.com/treasury/connect/access.md): Test in a sandbox environment to experiment before going live.
-- [Moving money using OutboundTransfer objects](https://docs.stripe.com/treasury/connect/moving-money/out-of/outbound-transfers.md): Learn how to transfer money out of financial accounts to external accounts.
-- [Marketing Treasury for platforms](https://docs.stripe.com/treasury/connect/marketing-financial-accounts.md): Create precise messaging for your users that complies with regulations.
-- [Platform financial accounts](https://docs.stripe.com/treasury/connect/account-management/platform-financial-account.md): Learn about the financial account for your platform.
-- [Regulatory receipts](https://docs.stripe.com/treasury/connect/moving-money/regulatory-receipts.md): Learn about hosted transaction receipts.
-- [Accounts structure](https://docs.stripe.com/treasury/connect/account-management/accounts-structure.md): Learn how the account components of Treasury for platforms interact.
-- [Handling complaints](https://docs.stripe.com/treasury/connect/handling-complaints.md): Learn how to properly handle complaints about Treasury for platforms or Stripe Issuing.
-- [Moving money using ReceivedCredit objects](https://docs.stripe.com/treasury/connect/moving-money/into/received-credits.md): Learn how to move money into a financial account from another financial account or bank account.
-- [Working with Stripe Issuing cards](https://docs.stripe.com/treasury/connect/account-management/issuing-cards.md): Learn how to integrate Stripe Issuing with Treasury for platforms.
-- [Webhooks for Stripe Issuing and Treasury for platforms](https://docs.stripe.com/treasury/connect/examples/webhooks.md): Learn about webhook events for Stripe Issuing and Treasury for platforms and why they occur.
-- [Moving money out of Treasury for platforms](https://docs.stripe.com/treasury/connect/moving-money/moving-money-out.md): Learn the requests available to move money out of financial accounts.
-- [Build a new Treasury for platforms integration with Fifth Third Bank](https://docs.stripe.com/treasury/connect/fifth-third-get-started.md): Get started with Treasury for platforms.
-- [Moving money using ReceivedDebit objects](https://docs.stripe.com/treasury/connect/moving-money/out-of/received-debits.md): Learn how external account holders can pull funds from a financial account.
-- [Moving money using CreditReversal objects](https://docs.stripe.com/treasury/connect/moving-money/into/credit-reversals.md): Learn how you can return funds from received credits that add money to your financial account.
-- [Moving money using DebitReversal objects](https://docs.stripe.com/treasury/connect/moving-money/out-of/debit-reversals.md): Learn how you can retrieve funds taken out of a financial account from an external account holder.
-- [Treasury for platforms supportability for connected accounts](https://docs.stripe.com/treasury/connect/account-management/supportability.md): Learn how Stripe evaluates connected accounts for Treasury for platforms supportability.
-- [Remote check acceptance](https://docs.stripe.com/treasury/connect/money-movement/remote-check-acceptance.md): Learn how to accept checks into your financial account.
-- [ACH NOC and SEC handling](https://docs.stripe.com/treasury/connect/moving-money/noc-sec-handling.md): Learn how external account information is updated.
-- [Test a remote check acceptance integration](https://docs.stripe.com/treasury/connect/money-movement/remote-check-acceptance-testing.md): Use a sandbox to test your integration and transition statuses.
-- [Remote check acceptance review guidelines](https://docs.stripe.com/treasury/connect/money-movement/remote-check-acceptance-review-guide.md): Learn best practices for reviewing checks.
+## Treasury for Platforms
+Treasury for Platforms is Stripe's embedded finance API (v2) for Connect platforms. It lets you embed bank accounts, money movement, and card issuing into your product using Stripe's infrastructure and bank partners. This is the current and
+recommended Treasury integration path — always use these v2 docs unless the user explicitly requests the legacy v1 Treasury API (legacy v1 docs are available at [Treasury for platforms v1](https://docs.stripe.com/treasury/connect.md)).
+### Get started
+- [Treasury for platforms](https://docs.stripe.com/treasury/connect/v2.md): Learn how to provide financial services to connected accounts.
+- [How Treasury for platforms works](https://docs.stripe.com/treasury/connect/v2/how-treasury-for-platforms-works.md): Learn about connected accounts, financial accounts, and moving money.
+- [Build an integration with Treasury for platforms](https://docs.stripe.com/treasury/connect/v2/build-an-integration.md): Set up an end-to-end integration with Treasury for platforms and familiarize yourself with its basic concepts.
+- [Prebuilt embedded finance](https://docs.stripe.com/treasury/connect/v2/prebuilt-embedded-finance.md): Add financial accounts, money movement, and card issuing to your platform without a custom integration.
+- [Manage fraud](https://docs.stripe.com/treasury/connect/v2/fraud-guide.md): Prevent fraud against your platform's Treasury and Issuing programs.
+### Compliance and marketing
+- [Treasury for platforms marketing compliance](https://docs.stripe.com/treasury/connect/v2/compliance.md): Design compliant Treasury for platforms marketing campaigns.
+- [Handle complaints](https://docs.stripe.com/treasury/connect/v2/handle-complaints.md): Learn how to properly handle complaints about Treasury for platforms or Stripe Issuing.
+- [Treasury for platforms messaging](https://docs.stripe.com/treasury/connect/v2/market-messaging.md): Create precise messaging for your users that complies with regulations.
+- [Treasury disclosure component](https://docs.stripe.com/treasury/connect/v2/disclosure-component.md): Embed a Treasury disclosure component directly onto your website.
+### Account management
+- [Financial accounts](https://docs.stripe.com/treasury/connect/v2/account-management/financial-accounts.md): Use financial accounts to store, send, and receive funds.
+- [Connected account financial accounts](https://docs.stripe.com/treasury/connect/v2/account-management/connected-accounts.md): Request money_manager capabilities and collect onboarding requirements for your connected accounts.
+- [Multiple financial accounts and external funding](https://docs.stripe.com/treasury/connect/v2/examples/multi-financial-accounts.md): Learn how to create two financial accounts and move funds between them.
+- [Migrate from storer to money manager configuration](https://docs.stripe.com/treasury/connect/v2/migrate-storer-to-money-manager.md): Update your integration to use the new money manager configuration name and restructured capabilities.
+### Move money
+- [Fund a financial account](https://docs.stripe.com/treasury/connect/v2/moving-money/fund-a-financial-account.md): Learn how to move money into a financial account balance.
+- [Transfer money between same-owner accounts](https://docs.stripe.com/treasury/connect/v2/moving-money/out-of/outbound-transfers.md): Learn how to transfer money from financial accounts to other accounts owned by the same business.
+- [Send money to recipients and financial accounts you don't own](https://docs.stripe.com/treasury/connect/v2/moving-money/out-of/outbound-payments.md): Learn how to create outbound payments to move money out of financial accounts to third parties.
+- [Received debits](https://docs.stripe.com/treasury/connect/v2/moving-money/received-debits.md): Authorize and manage third-party-initiated debits.
+- [Cross-border payouts and automatic transfer rules](https://docs.stripe.com/treasury/connect/v2/examples/cross-border-and-automatic-transfer-rules.md): Create a financial account, automate funding and send a cross-border OutboundPayment.
+- [Money movement timelines](https://docs.stripe.com/treasury/connect/v2/money-movement/timelines.md): Learn how long money movement takes with Treasury for platforms.
+### Transactions
+- [Working with Transactions](https://docs.stripe.com/treasury/connect/v2/transactions/working-with-transactions.md): Use transactions to track money movement on financial accounts.
+### Fees
+- [Administrative facilitation fee](https://docs.stripe.com/treasury/connect/v2/prebuilt-embedded-finance/aff.md): Understand how Stripe calculates and pays out the administrative facilitation fee for your platform.
 
 
 
@@ -638,7 +627,7 @@ Learn more about Terminal’s [features](https://docs.stripe.com/terminal.md#fea
 - [Provide receipts](https://docs.stripe.com/terminal/features/receipts.md): Use Stripe to provide your customers with receipts that meet card network rules.
 - [Manage locations](https://docs.stripe.com/terminal/fleet/locations-and-zones.md): Group and manage your readers by physical location.
 - [Example applications](https://docs.stripe.com/terminal/example-applications.md): Try Stripe Terminal by using the example applications and simulated reader.
-- [Stripe Reader M2](https://docs.stripe.com/terminal/readers/stripe-m2.md): Learn about the Stripe Reader M2 Bluetooth reader.
+- [Stripe Reader M2](https://docs.stripe.com/terminal/readers/stripe-m2.md): Learn about the Stripe Reader M2 mobile reader.
 - [Terminal network requirements](https://docs.stripe.com/terminal/network-requirements.md): Make sure your network is ready for Terminal, and troubleshoot common issues.
 - [Stripe Terminal smart readers](https://docs.stripe.com/terminal/smart-readers.md): Learn about Stripe's pre-certified in-person payment readers.
 - [Build and test your app](https://docs.stripe.com/terminal/features/apps-on-devices/build.md): Learn how to build and test your app using a DevKit.

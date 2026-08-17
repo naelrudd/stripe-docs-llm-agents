@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 484
+Pages: 504
 
 | Path | First heading |
 |---|---|
@@ -476,6 +476,26 @@ Pages: 484
 | [treasury/connect/moving-money/regulatory-receipts.md](https://docs.stripe.com/treasury/connect/moving-money/regulatory-receipts.md) | Regulatory receipts |
 | [treasury/connect/moving-money/working-with-bankaccount-objects.md](https://docs.stripe.com/treasury/connect/moving-money/working-with-bankaccount-objects.md) | Working with SetupIntents, PaymentMethods, and BankAccounts |
 | [treasury/connect/requirements.md](https://docs.stripe.com/treasury/connect/requirements.md) | Treasury for platforms requirements |
+| [treasury/connect/v2/account-management/connected-accounts.md](https://docs.stripe.com/treasury/connect/v2/account-management/connected-accounts.md) | Connected account financial accounts |
+| [treasury/connect/v2/account-management/financial-accounts.md](https://docs.stripe.com/treasury/connect/v2/account-management/financial-accounts.md) | Financial accounts |
+| [treasury/connect/v2/build-an-integration.md](https://docs.stripe.com/treasury/connect/v2/build-an-integration.md) | Build an integration with Treasury for platforms |
+| [treasury/connect/v2/compliance.md](https://docs.stripe.com/treasury/connect/v2/compliance.md) | Treasury for platforms marketing compliance |
+| [treasury/connect/v2/examples/cross-border-and-automatic-transfer-rules.md](https://docs.stripe.com/treasury/connect/v2/examples/cross-border-and-automatic-transfer-rules.md) | Cross-border payouts and automatic transfer rules |
+| [treasury/connect/v2/examples/multi-financial-accounts.md](https://docs.stripe.com/treasury/connect/v2/examples/multi-financial-accounts.md) | Multiple financial accounts and external funding |
+| [treasury/connect/v2/fraud-guide.md](https://docs.stripe.com/treasury/connect/v2/fraud-guide.md) | Manage fraud |
+| [treasury/connect/v2/handle-complaints.md](https://docs.stripe.com/treasury/connect/v2/handle-complaints.md) | Handle complaints |
+| [treasury/connect/v2/how-treasury-for-platforms-works.md](https://docs.stripe.com/treasury/connect/v2/how-treasury-for-platforms-works.md) | How Treasury for platforms works |
+| [treasury/connect/v2/market-messaging.md](https://docs.stripe.com/treasury/connect/v2/market-messaging.md) | Treasury for platforms messaging |
+| [treasury/connect/v2/money-movement/timelines.md](https://docs.stripe.com/treasury/connect/v2/money-movement/timelines.md) | Money movement timelines |
+| [treasury/connect/v2/moving-money/fund-a-financial-account.md](https://docs.stripe.com/treasury/connect/v2/moving-money/fund-a-financial-account.md) | Fund a financial account |
+| [treasury/connect/v2/moving-money/out-of/outbound-payments.md](https://docs.stripe.com/treasury/connect/v2/moving-money/out-of/outbound-payments.md) | Send money to recipients and financial accounts you don't own |
+| [treasury/connect/v2/moving-money/out-of/outbound-transfers.md](https://docs.stripe.com/treasury/connect/v2/moving-money/out-of/outbound-transfers.md) | Transfer money between same-owner accounts |
+| [treasury/connect/v2/moving-money/received-debits.md](https://docs.stripe.com/treasury/connect/v2/moving-money/received-debits.md) | Received debits |
+| [treasury/connect/v2/prebuilt-embedded-finance/aff.md](https://docs.stripe.com/treasury/connect/v2/prebuilt-embedded-finance/aff.md) | Administrative facilitation fee |
+| [treasury/connect/v2/prebuilt-embedded-finance.md](https://docs.stripe.com/treasury/connect/v2/prebuilt-embedded-finance.md) | Prebuilt embedded finance |
+| [treasury/connect/v2/transactions/working-with-transactions.md](https://docs.stripe.com/treasury/connect/v2/transactions/working-with-transactions.md) | Working with Transactions |
+| [treasury/connect/v2.md](https://docs.stripe.com/treasury/connect/v2.md) | Treasury for platforms |
+| [treasury/connect.md](https://docs.stripe.com/treasury/connect.md) | Treasury for platforms |
 | [treasury.md](https://docs.stripe.com/treasury.md) | Manage money with Stripe Treasury |
 | [upgrades.md](https://docs.stripe.com/upgrades.md) | API upgrades |
 | [use-stripe-apps/netsuite/custom-payment-application.md](https://docs.stripe.com/use-stripe-apps/netsuite/custom-payment-application.md) | Custom payment application |
