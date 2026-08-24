@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 504
+Pages: 520
 
 | Path | First heading |
 |---|---|
@@ -161,6 +161,7 @@ Pages: 504
 | [disputes/prevention.md](https://docs.stripe.com/disputes/prevention.md) | Understand fraud |
 | [elements/address-element.md](https://docs.stripe.com/elements/address-element.md) | Address Element |
 | [elements/appearance-api/mobile.md](https://docs.stripe.com/elements/appearance-api/mobile.md) | Customize appearance |
+| [elements/express-checkout-element.md](https://docs.stripe.com/elements/express-checkout-element.md) | Express Checkout Element |
 | [elements.md](https://docs.stripe.com/elements.md) | Stripe Web Elements |
 | [event-destinations.md](https://docs.stripe.com/event-destinations.md) | Integrate with events |
 | [financial-connections/ach-direct-debit-payments.md](https://docs.stripe.com/financial-connections/ach-direct-debit-payments.md) | Collect a bank account to use ACH Direct Debit payments with account data |
@@ -245,6 +246,7 @@ Pages: 504
 | [issuing/sample-app.md](https://docs.stripe.com/issuing/sample-app.md) | Issuing and Treasury for platforms sample app |
 | [issuing/testing.md](https://docs.stripe.com/issuing/testing.md) | Test your Issuing integration |
 | [issuing.md](https://docs.stripe.com/issuing.md) | Issuing |
+| [js.md](https://docs.stripe.com/js.md) | Stripe.js reference |
 | [no-code/invoices.md](https://docs.stripe.com/no-code/invoices.md) | Use invoices |
 | [no-code/quotes.md](https://docs.stripe.com/no-code/quotes.md) | Send quotes |
 | [no-code/subscriptions.md](https://docs.stripe.com/no-code/subscriptions.md) | Create subscriptions |
@@ -296,6 +298,7 @@ Pages: 504
 | [payments/checkout/upsells.md](https://docs.stripe.com/payments/checkout/upsells.md) | Subscription upsells |
 | [payments/checkout.md](https://docs.stripe.com/payments/checkout.md) | Build a payments page |
 | [payments/collect-addresses.md](https://docs.stripe.com/payments/collect-addresses.md) | Collect physical addresses |
+| [payments/currencies/localize-prices/adaptive-pricing.md](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md) | Adaptive Pricing |
 | [payments/during-payment/charge-shipping.md](https://docs.stripe.com/payments/during-payment/charge-shipping.md) | Charge for shipping |
 | [payments/eftpos-australia.md](https://docs.stripe.com/payments/eftpos-australia.md) | eftpos Australia |
 | [payments/elements/contact-details-element.md](https://docs.stripe.com/payments/elements/contact-details-element.md) | Contact Details Element |
@@ -451,17 +454,26 @@ Pages: 504
 | [treasury/connect/account-management/platform-financial-account.md](https://docs.stripe.com/treasury/connect/account-management/platform-financial-account.md) | Platform financial accounts |
 | [treasury/connect/account-management/supportability.md](https://docs.stripe.com/treasury/connect/account-management/supportability.md) | Treasury for platforms supportability for connected accounts |
 | [treasury/connect/account-management/working-with-balances-and-transactions.md](https://docs.stripe.com/treasury/connect/account-management/working-with-balances-and-transactions.md) | Working with balances and transactions |
+| [treasury/connect/build-an-integration.md](https://docs.stripe.com/treasury/connect/build-an-integration.md) | Build an integration with Treasury for platforms |
 | [treasury/connect/compliance.md](https://docs.stripe.com/treasury/connect/compliance.md) | Treasury for platforms product marketing, design, and compliance guidelines |
+| [treasury/connect/examples/cross-border-and-automatic-transfer-rules.md](https://docs.stripe.com/treasury/connect/examples/cross-border-and-automatic-transfer-rules.md) | Cross-border payouts and automatic transfer rules |
 | [treasury/connect/examples/financial-accounts.md](https://docs.stripe.com/treasury/connect/examples/financial-accounts.md) | Use Treasury for platforms and Issuing to set up financial accounts and cards |
 | [treasury/connect/examples/fraud-guide.md](https://docs.stripe.com/treasury/connect/examples/fraud-guide.md) | Treasury for platforms fraud guide |
 | [treasury/connect/examples/moving-money.md](https://docs.stripe.com/treasury/connect/examples/moving-money.md) | Using Treasury for platforms to move money |
+| [treasury/connect/examples/multi-financial-accounts.md](https://docs.stripe.com/treasury/connect/examples/multi-financial-accounts.md) | Multiple financial accounts and external funding |
 | [treasury/connect/examples/onboarding-guide.md](https://docs.stripe.com/treasury/connect/examples/onboarding-guide.md) | Treasury for platforms connected account onboarding guide |
 | [treasury/connect/examples/sample-app.md](https://docs.stripe.com/treasury/connect/examples/sample-app.md) | Issuing and Treasury for platforms sample app |
 | [treasury/connect/examples/webhooks.md](https://docs.stripe.com/treasury/connect/examples/webhooks.md) | Webhooks for Stripe Issuing and Treasury for platforms |
 | [treasury/connect/fifth-third-get-started.md](https://docs.stripe.com/treasury/connect/fifth-third-get-started.md) | Build a new Treasury for platforms integration with Fifth Third Bank |
+| [treasury/connect/fraud-guide.md](https://docs.stripe.com/treasury/connect/fraud-guide.md) | Manage fraud |
+| [treasury/connect/handle-complaints.md](https://docs.stripe.com/treasury/connect/handle-complaints.md) | Handle complaints |
 | [treasury/connect/handling-complaints.md](https://docs.stripe.com/treasury/connect/handling-complaints.md) | Handling complaints |
+| [treasury/connect/how-treasury-for-platforms-works.md](https://docs.stripe.com/treasury/connect/how-treasury-for-platforms-works.md) | How Treasury for platforms works |
+| [treasury/connect/legacy/v1/examples/sample-app.md](https://docs.stripe.com/treasury/connect/legacy/v1/examples/sample-app.md) | Issuing and Treasury for platforms sample app |
 | [treasury/connect/marketing-financial-accounts.md](https://docs.stripe.com/treasury/connect/marketing-financial-accounts.md) | Marketing Treasury for platforms |
+| [treasury/connect/marketing.md](https://docs.stripe.com/treasury/connect/marketing.md) | Treasury for platforms messaging |
 | [treasury/connect/money-movement/timelines.md](https://docs.stripe.com/treasury/connect/money-movement/timelines.md) | Money movement timelines |
+| [treasury/connect/moving-money/fund-a-financial-account.md](https://docs.stripe.com/treasury/connect/moving-money/fund-a-financial-account.md) | Fund a financial account |
 | [treasury/connect/moving-money/into/credit-reversals.md](https://docs.stripe.com/treasury/connect/moving-money/into/credit-reversals.md) | Moving money using CreditReversal objects |
 | [treasury/connect/moving-money/into/inbound-transfers.md](https://docs.stripe.com/treasury/connect/moving-money/into/inbound-transfers.md) | Moving money with using InboundTransfer objects |
 | [treasury/connect/moving-money/into/received-credits.md](https://docs.stripe.com/treasury/connect/moving-money/into/received-credits.md) | Moving money using ReceivedCredit objects |
@@ -473,9 +485,13 @@ Pages: 504
 | [treasury/connect/moving-money/out-of/outbound-transfers.md](https://docs.stripe.com/treasury/connect/moving-money/out-of/outbound-transfers.md) | Moving money using OutboundTransfer objects |
 | [treasury/connect/moving-money/out-of/received-debits.md](https://docs.stripe.com/treasury/connect/moving-money/out-of/received-debits.md) | Moving money using ReceivedDebit objects |
 | [treasury/connect/moving-money/payouts.md](https://docs.stripe.com/treasury/connect/moving-money/payouts.md) | Payouts and top-ups from your payments balance |
+| [treasury/connect/moving-money/received-debits.md](https://docs.stripe.com/treasury/connect/moving-money/received-debits.md) | Received debits |
 | [treasury/connect/moving-money/regulatory-receipts.md](https://docs.stripe.com/treasury/connect/moving-money/regulatory-receipts.md) | Regulatory receipts |
 | [treasury/connect/moving-money/working-with-bankaccount-objects.md](https://docs.stripe.com/treasury/connect/moving-money/working-with-bankaccount-objects.md) | Working with SetupIntents, PaymentMethods, and BankAccounts |
+| [treasury/connect/prebuilt-embedded-finance/aff.md](https://docs.stripe.com/treasury/connect/prebuilt-embedded-finance/aff.md) | Administrative facilitation fee |
+| [treasury/connect/prebuilt-embedded-finance.md](https://docs.stripe.com/treasury/connect/prebuilt-embedded-finance.md) | Prebuilt embedded finance |
 | [treasury/connect/requirements.md](https://docs.stripe.com/treasury/connect/requirements.md) | Treasury for platforms requirements |
+| [treasury/connect/transactions/working-with-transactions.md](https://docs.stripe.com/treasury/connect/transactions/working-with-transactions.md) | Working with Transactions |
 | [treasury/connect/v2/account-management/connected-accounts.md](https://docs.stripe.com/treasury/connect/v2/account-management/connected-accounts.md) | Connected account financial accounts |
 | [treasury/connect/v2/account-management/financial-accounts.md](https://docs.stripe.com/treasury/connect/v2/account-management/financial-accounts.md) | Financial accounts |
 | [treasury/connect/v2/build-an-integration.md](https://docs.stripe.com/treasury/connect/v2/build-an-integration.md) | Build an integration with Treasury for platforms |
