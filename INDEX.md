@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 520
+Pages: 521
 
 | Path | First heading |
 |---|---|
@@ -146,6 +146,7 @@ Pages: 520
 | [declines.md](https://docs.stripe.com/declines.md) | Declines |
 | [development/dashboard/events.md](https://docs.stripe.com/development/dashboard/events.md) | View events and event object payloads |
 | [development/dashboard/request-logs.md](https://docs.stripe.com/development/dashboard/request-logs.md) | View API request logs |
+| [directory.md](https://docs.stripe.com/directory.md) | Stripe Directory |
 | [disputes/api/visa-ce3.md](https://docs.stripe.com/disputes/api/visa-ce3.md) | Visa Compelling Evidence 3.0 disputes |
 | [disputes/api/visa-compliance.md](https://docs.stripe.com/disputes/api/visa-compliance.md) | Visa compliance disputes |
 | [disputes/api.md](https://docs.stripe.com/disputes/api.md) | Use the API to respond to disputes |

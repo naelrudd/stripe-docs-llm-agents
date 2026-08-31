@@ -10,6 +10,7 @@ When installing Stripe packages, always check the npm registry for the latest ve
 - [Platforms and marketplaces with Stripe Connect](https://docs.stripe.com/connect.md): Build a SaaS platform or marketplace with Connect.
 - [Supported currencies](https://docs.stripe.com/currencies.md): Learn which currencies Stripe supports for payments and bank payouts.
 - [API upgrades](https://docs.stripe.com/upgrades.md): Learn how to manage API versions and handle breaking changes in major releases.
+- [Stripe Directory](https://docs.stripe.com/directory.md): Stripe Directory helps agents find the best external providers for a task and follow the best supported path to provision or use them.
 - [Stripe Projects CLI](https://docs.stripe.com/projects.md): Stripe Projects is a CLI for provisioning software stacks.
 - [Stripe SDKs](https://docs.stripe.com/sdks.md): Libraries and tools for interacting with your Stripe integration.
 - [Receive Stripe events in your webhook endpoint](https://docs.stripe.com/webhooks.md): Listen for events from Stripe on your webhook endpoint so your integration can automatically trigger reactions.
