@@ -133,7 +133,7 @@ Integrate a Stripe product to start accepting payments online and in person, emb
 - [Link in the Card Element](https://docs.stripe.com/payments/link/card-element-link.md): Enable checkout using Link with the Card Element.
 - [Link in the Mobile Payment Element](https://docs.stripe.com/payments/link/mobile-payment-element-link.md): Add Link to your native iOS, Android, and React Native apps.
 - [Link in the Express Checkout Element](https://docs.stripe.com/payments/link/express-checkout-element-link.md): Let customers check out faster with Link and the Express Checkout Element.
-- [Link with Invoicing](https://docs.stripe.com/payments/link/invoicing.md): Speed up invoice payments by using Link with the Hosted Invoice Page.
+- [Link with Invoicing](https://docs.stripe.com/payments/link/invoicing.md): Speed up invoice payments by using Link with the hosted invoice page.
 - [Explore the Contact Details Element](https://docs.stripe.com/payments/link/contact-details-element.md): Create a single email input for both email collection and Link authentication.
 
 ## Architecture and Dashboard
@@ -458,7 +458,7 @@ Create and manage invoices for one-time payments with Stripe Invoicing. Invoices
 - [Multi-currency customers](https://docs.stripe.com/invoicing/multi-currency-customers.md): Change the billable currency for any customer to accept multiple currencies.
 - [Products and prices](https://docs.stripe.com/invoicing/products-prices.md): Use the Invoicing API to manage products and prices.
 - [Test Stripe Invoicing](https://docs.stripe.com/invoicing/integration/testing.md): Learn how to test your Invoicing integration.
-- [Scheduled payments](https://docs.stripe.com/invoicing/hosted-invoice-page/scheduled-payments.md): Let your customers schedule their payments through the Hosted Invoice Page.
+- [Scheduled payments](https://docs.stripe.com/invoicing/hosted-invoice-page/scheduled-payments.md): Let your customers schedule their payments through the hosted invoice page.
 - [Schedule invoice finalization to send or charge an invoice in the future](https://docs.stripe.com/invoicing/scheduled-finalization.md): Learn how to schedule an invoice and automatically send or charge for it on a  future date.
 - [Preview an invoice](https://docs.stripe.com/invoicing/preview.md): Learn how to create a preview of an invoice.
 - [Troubleshoot the connector](https://docs.stripe.com/use-stripe-apps/netsuite/error-resolution.md): Learn how to troubleshoot errors with the Stripe Connector for NetSuite.
