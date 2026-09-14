@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 521
+Pages: 524
 
 | Path | First heading |
 |---|---|
@@ -233,6 +233,7 @@ Pages: 521
 | [issuing/cards/virtual.md](https://docs.stripe.com/issuing/cards/virtual.md) | Virtual cards with Issuing |
 | [issuing/categories.md](https://docs.stripe.com/issuing/categories.md) | Issuing merchant categories |
 | [issuing/choose-cards.md](https://docs.stripe.com/issuing/choose-cards.md) | Choose which type of card to issue |
+| [issuing/commercial-compliance.md](https://docs.stripe.com/issuing/commercial-compliance.md) | Commercial Issuing and Treasury product marketing, design, and compliance guidelines |
 | [issuing/compliance-us.md](https://docs.stripe.com/issuing/compliance-us.md) | Issuing and Treasury product marketing, design, and compliance guidelines |
 | [issuing/connect/tos_acceptance.md](https://docs.stripe.com/issuing/connect/tos_acceptance.md) | Update the Issuing terms of service acceptance |
 | [issuing/elements.md](https://docs.stripe.com/issuing/elements.md) | Using Issuing Elements |
@@ -396,6 +397,7 @@ Pages: 521
 | [revenue-recognition/rules.md](https://docs.stripe.com/revenue-recognition/rules.md) | Revenue Recognition rules |
 | [saas.md](https://docs.stripe.com/saas.md) | Integrate a SaaS business on Stripe |
 | [samples/identity/redirect.md](https://docs.stripe.com/samples/identity/redirect.md) | Identity verification (redirect) |
+| [sandboxes.md](https://docs.stripe.com/sandboxes.md) | Sandboxes |
 | [sdks.md](https://docs.stripe.com/sdks.md) | Stripe SDKs |
 | [security/guide.md](https://docs.stripe.com/security/guide.md) | Integration security guide |
 | [security.md](https://docs.stripe.com/security.md) | Security at Stripe |
@@ -457,6 +459,7 @@ Pages: 521
 | [treasury/connect/account-management/working-with-balances-and-transactions.md](https://docs.stripe.com/treasury/connect/account-management/working-with-balances-and-transactions.md) | Working with balances and transactions |
 | [treasury/connect/build-an-integration.md](https://docs.stripe.com/treasury/connect/build-an-integration.md) | Build an integration with Treasury for platforms |
 | [treasury/connect/compliance.md](https://docs.stripe.com/treasury/connect/compliance.md) | Treasury for platforms product marketing, design, and compliance guidelines |
+| [treasury/connect/disclosures.md](https://docs.stripe.com/treasury/connect/disclosures.md) | Compliance disclosures |
 | [treasury/connect/examples/cross-border-and-automatic-transfer-rules.md](https://docs.stripe.com/treasury/connect/examples/cross-border-and-automatic-transfer-rules.md) | Cross-border payouts and automatic transfer rules |
 | [treasury/connect/examples/financial-accounts.md](https://docs.stripe.com/treasury/connect/examples/financial-accounts.md) | Use Treasury for platforms and Issuing to set up financial accounts and cards |
 | [treasury/connect/examples/fraud-guide.md](https://docs.stripe.com/treasury/connect/examples/fraud-guide.md) | Treasury for platforms fraud guide |
