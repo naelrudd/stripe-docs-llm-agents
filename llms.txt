@@ -404,9 +404,19 @@ Stripe Climate is the easiest way to help emerging permanent carbon removal tech
 Automate sales tax, VAT, and GST compliance on all your transactions—low or no code integrations available. You can integrate Stripe Tax with Payment Links or the Checkout Sessions API and use it for subscriptions and invoices. You can also create custom payment flows or integrate Stripe Tax as a platform with Connect.
 
 - [Set up Stripe Tax](https://docs.stripe.com/tax/set-up.md): Enable Stripe Tax to automatically calculate and collect tax.
+- [Monitor tax obligations](https://docs.stripe.com/tax/monitoring.md): Review potential registration obligations, thresholds, and notifications.
+- [Collect customer locations](https://docs.stripe.com/tax/customer-locations.md): Understand supported address formats and how Stripe Tax determines a customer location.
+- [Register for tax](https://docs.stripe.com/tax/registering.md): Add tax registrations to Stripe after registering with the tax authority.
+- [Use Stripe to register for US sales tax](https://docs.stripe.com/tax/use-stripe-to-register.md): Check eligibility for Stripe’s Register for me service.
+- [File and remit tax](https://docs.stripe.com/tax/filing.md): Compare filing options and partner-specific availability and pricing.
+- [File US sales tax with Stripe](https://docs.stripe.com/tax/file-with-stripe.md): Set up TaxJar filing from the Stripe Dashboard.
+- [File tax with Taxually](https://docs.stripe.com/tax/file-with-taxually.md): Set up Taxually filing where it is available.
 - [Product tax codes](https://docs.stripe.com/tax/tax-codes.md): Authoritative complete list of active Stripe Tax product tax code (`txcd_`) identifiers and their definitions. Use only exact `txcd_` values from this list; never infer or construct an identifier.
+- [Tax for digital products](https://docs.stripe.com/tax/digital-products.md): Select a tax code that matches a digital product’s delivery method, access type, and customer type.
 - [How Stripe Tax works](https://docs.stripe.com/tax/how-tax-works.md): Learn how Stripe helps you automate tax compliance.
 - [Standalone Tax API](https://docs.stripe.com/tax/standalone-tax-api.md): Use the Tax Calculations and Transactions APIs directly for shipping, tax-inclusive pricing, and more.
+- [Stripe Tax with PaymentIntents](https://docs.stripe.com/tax/payment-intent.md): Choose automatic or custom tax transaction and refund-reversal handling for a custom payment flow.
+- [Refund taxed invoices](https://docs.stripe.com/tax/invoicing/refunds.md): Issue refunds or credit notes on taxed invoices and understand the resulting tax-liability adjustment.
 - [Specify product tax codes and tax behavior](https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md): Add tax codes and tax behavior to your products and prices to automatically calculate tax.
 - [Zero tax amounts and reverse charges](https://docs.stripe.com/tax/zero-tax.md): Learn about cases when Stripe Tax calculates zero tax.
 - [Countries supported by Stripe Tax](https://docs.stripe.com/tax/supported-countries.md): Learn where you can use Stripe Tax.
@@ -432,7 +442,6 @@ Automate sales tax, VAT, and GST compliance on all your transactions—low or no
 - [Install and configure the Stripe Tax Extension](https://docs.stripe.com/use-stripe-apps/woocommerce/configuration.md): Use the Stripe Tax Extension for WooCommerce to automatically calculate sales tax, VAT, and GST.
 - [Use the Registrations API to manage tax registrations](https://docs.stripe.com/tax/registrations-api.md): Learn how to add, schedule, and check active tax registrations.
 - [Stripe Tax Extension for WooCommerce](https://docs.stripe.com/use-stripe-apps/woocommerce.md): Learn about the Stripe Tax Extension for WooCommerce.
-- [Countries supported by Stripe Tax](https://docs.stripe.com/tax/supported-countries.md): Learn where you can use Stripe Tax.
 - [The Tax ID object](https://docs.stripe.com/api/tax_ids/object.md)
 
 ## Invoicing
@@ -568,7 +577,7 @@ Treasury for Platforms is Stripe’s embedded finance API (v2) for Connect platf
 - [Treasury for platforms marketing compliance](https://docs.stripe.com/treasury/connect/compliance.md): Design compliant Treasury for platforms marketing campaigns.
 - [Handle complaints](https://docs.stripe.com/treasury/connect/handle-complaints.md): Learn how to properly handle complaints about Treasury for platforms or Stripe Issuing.
 - [Treasury for platforms messaging](https://docs.stripe.com/treasury/connect/marketing.md): Create precise messaging for your users that complies with regulations.
-- [Compliance disclosures](https://docs.stripe.com/treasury/connect/disclosures.md): Embed Treasury and Issuing disclosure components directly on your website.
+- [Compliance disclosures](https://docs.stripe.com/treasury/connect/disclosures.md): Use required Treasury disclosure copy and embed the Issuing disclosure component on your website.
 
 ### Account management
 

@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 524
+Pages: 534
 
 | Path | First heading |
 |---|---|
@@ -406,11 +406,20 @@ Pages: 524
 | [tax/checkout/tax-ids.md](https://docs.stripe.com/tax/checkout/tax-ids.md) | Collect customer tax IDs with Checkout |
 | [tax/checkout.md](https://docs.stripe.com/tax/checkout.md) | Collect tax with Checkout |
 | [tax/connect.md](https://docs.stripe.com/tax/connect.md) | Use Stripe Tax with Connect |
+| [tax/customer-locations.md](https://docs.stripe.com/tax/customer-locations.md) | Collect customer addresses |
+| [tax/digital-products.md](https://docs.stripe.com/tax/digital-products.md) | Tax for digital products |
+| [tax/file-with-stripe.md](https://docs.stripe.com/tax/file-with-stripe.md) | File with Stripe |
+| [tax/file-with-taxually.md](https://docs.stripe.com/tax/file-with-taxually.md) | File with Taxually |
+| [tax/filing.md](https://docs.stripe.com/tax/filing.md) | File and remit |
 | [tax/how-tax-works.md](https://docs.stripe.com/tax/how-tax-works.md) | How Stripe Tax works |
+| [tax/invoicing/refunds.md](https://docs.stripe.com/tax/invoicing/refunds.md) | Refunds and credit notes |
 | [tax/invoicing/tax-ids.md](https://docs.stripe.com/tax/invoicing/tax-ids.md) | Account and customer tax IDs with Invoicing |
 | [tax/invoicing.md](https://docs.stripe.com/tax/invoicing.md) | Automatically collect tax on invoices |
+| [tax/monitoring.md](https://docs.stripe.com/tax/monitoring.md) | Monitor your obligations |
+| [tax/payment-intent.md](https://docs.stripe.com/tax/payment-intent.md) | Stripe Tax with PaymentIntents |
 | [tax/payment-links.md](https://docs.stripe.com/tax/payment-links.md) | Automatically collect tax on Payment Links |
 | [tax/products-prices-tax-codes-tax-behavior.md](https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md) | Specify product tax codes and tax behavior |
+| [tax/registering.md](https://docs.stripe.com/tax/registering.md) | Register for sales tax, VAT, and GST |
 | [tax/registrations-api.md](https://docs.stripe.com/tax/registrations-api.md) | Use the Registrations API to manage tax registrations |
 | [tax/set-up.md](https://docs.stripe.com/tax/set-up.md) | Set up Stripe Tax |
 | [tax/settings-api.md](https://docs.stripe.com/tax/settings-api.md) | Use the Settings API to configure Stripe Tax |
@@ -425,6 +434,7 @@ Pages: 524
 | [tax/tax-for-platforms.md](https://docs.stripe.com/tax/tax-for-platforms.md) | Tax for software platforms |
 | [tax/tax-rates.md](https://docs.stripe.com/tax/tax-rates.md) | Tax rates |
 | [tax/testing.md](https://docs.stripe.com/tax/testing.md) | Testing Stripe Tax |
+| [tax/use-stripe-to-register.md](https://docs.stripe.com/tax/use-stripe-to-register.md) | Use Stripe to register for sales tax |
 | [tax/zero-tax.md](https://docs.stripe.com/tax/zero-tax.md) | Zero tax amounts and reverse charges |
 | [tax.md](https://docs.stripe.com/tax.md) | Stripe Tax |
 | [terminal/example-applications.md](https://docs.stripe.com/terminal/example-applications.md) | Example applications |
