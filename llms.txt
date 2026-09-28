@@ -271,12 +271,12 @@ For any new platform building on Connect, always start with [How Connect Works](
 ### SaaS platforms
 
 - [Build a SaaS platform](https://docs.stripe.com/connect/saas.md): Learn how to build a Connect integration for SaaS platforms, including recommended onboarding, payment flows, and platform fee setup.
-- [SaaS platform quickstart](https://docs.stripe.com/connect/saas/quickstart.md): Follow a step-by-step guide to set up a SaaS Connect integration quickly from onboarding through taking payments in test mode.
+- [SaaS platform quickstart](https://docs.stripe.com/connect/saas/quickstart.md): Follow a step-by-step guide to set up a SaaS Connect integration quickly from onboarding through taking payments in a sandbox.
 
 ### Marketplaces
 
 - [Build a marketplace](https://docs.stripe.com/connect/marketplace.md): Learn how to build a Connect integration for a marketplace, including common payment flows and how funds move between buyers, sellers, and your platform.
-- [Marketplace quickstart](https://docs.stripe.com/connect/marketplace/quickstart.md): Follow a step-by-step guide to set up a marketplace Connect integration quickly from onboarding through taking payments in test mode.
+- [Marketplace quickstart](https://docs.stripe.com/connect/marketplace/quickstart.md): Follow a step-by-step guide to set up a marketplace Connect integration quickly from onboarding through taking payments in a sandbox.
 
 ### Onboarding
 
@@ -366,6 +366,7 @@ Stripe Capital provides access to financing options for eligible users processin
 - [How Stripe Capital works](https://docs.stripe.com/capital/how-stripe-capital-works.md): Learn how Stripe Capital provides financing for eligible businesses.
 - [Set up Capital](https://docs.stripe.com/capital/getting-started.md): Determine which integration option to use when you set up Stripe Capital.
 - [How Stripe Capital for platforms works](https://docs.stripe.com/capital/how-capital-for-platforms-works.md): Learn the basics about Stripe Capital for platforms.
+- [How Capital affects your Connect integration](https://docs.stripe.com/capital/connect-integration.md): Learn how Capital offers, applications, financing payouts, and payments affect connected accounts.
 - [Managing customer support](https://docs.stripe.com/capital/servicing.md): Support your Capital customers by region.
 - [Capital financing component](https://docs.stripe.com/connect/supported-embedded-components/capital-financing.md): Allow a connected account to view and manage their active Capital financing.
 - [Build a custom Capital program](https://docs.stripe.com/capital/api-integration.md): Integrate with our API to build a custom Capital program.
@@ -577,7 +578,6 @@ Treasury for Platforms is Stripe’s embedded finance API (v2) for Connect platf
 - [Treasury for platforms marketing compliance](https://docs.stripe.com/treasury/connect/compliance.md): Design compliant Treasury for platforms marketing campaigns.
 - [Handle complaints](https://docs.stripe.com/treasury/connect/handle-complaints.md): Learn how to properly handle complaints about Treasury for platforms or Stripe Issuing.
 - [Treasury for platforms messaging](https://docs.stripe.com/treasury/connect/marketing.md): Create precise messaging for your users that complies with regulations.
-- [Compliance disclosures](https://docs.stripe.com/treasury/connect/disclosures.md): Use required Treasury disclosure copy and embed the Issuing disclosure component on your website.
 
 ### Account management
 

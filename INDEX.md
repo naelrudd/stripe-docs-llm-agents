@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 534
+Pages: 535
 
 | Path | First heading |
 |---|---|
@@ -69,6 +69,7 @@ Pages: 534
 | [billing/taxes/collect-taxes.md](https://docs.stripe.com/billing/taxes/collect-taxes.md) | Collect taxes for recurring payments |
 | [billing.md](https://docs.stripe.com/billing.md) | Billing |
 | [capital/api-integration.md](https://docs.stripe.com/capital/api-integration.md) | Build a custom Capital program |
+| [capital/connect-integration.md](https://docs.stripe.com/capital/connect-integration.md) | How Capital affects your Connect integration |
 | [capital/getting-started.md](https://docs.stripe.com/capital/getting-started.md) | Set up Capital |
 | [capital/how-capital-for-platforms-works.md](https://docs.stripe.com/capital/how-capital-for-platforms-works.md) | How Stripe Capital for platforms works |
 | [capital/how-stripe-capital-works.md](https://docs.stripe.com/capital/how-stripe-capital-works.md) | How Stripe Capital works |
