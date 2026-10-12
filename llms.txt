@@ -26,8 +26,8 @@ When planning a new integration, use general [sandboxes](https://docs.stripe.com
 - [Types of events](https://docs.stripe.com/api/events/types.md)
 - [Integration security guide](https://docs.stripe.com/security/guide.md): Ensure PCI compliance and secure customer-server communications.
 - [Payments analytics](https://docs.stripe.com/payments/analytics.md): Learn about the performance of your payments using key metrics and reports.
-- [Integrate with events](https://docs.stripe.com/event-destinations.md): Send events from Stripe to webhook endpoints and cloud services.
-- [Resolve webhook signature verification errors](https://docs.stripe.com/webhooks/signature.md): Learn how to fix a common error when listening to webhook events.
+- [Integrate with events](https://docs.stripe.com/events/set-up-events.md): Send events from Stripe to webhook endpoints and cloud services.
+- [Resolve webhook signature verification errors](https://docs.stripe.com/events/manage-webhook-endpoints.md#signature-errors): Learn how to fix a common error when listening to webhook events.
 - [Start a team](https://docs.stripe.com/get-started/account/teams.md): Learn how to invite and interact with team members.
 - [Errors](https://docs.stripe.com/api/errors.md)
 - [Versioning](https://docs.stripe.com/api/versioning.md)
@@ -348,6 +348,7 @@ Use the Stripe Issuing API to create, manage, and distribute payment cards for y
 - [Issuing and Treasury for platforms sample app](https://docs.stripe.com/treasury/connect/legacy/v1/examples/sample-app.md): Use the Stripe Next.js sample app to start your own Issuing and Treasury for platforms integration.
 - [Manage fraud with Stripe Issuing controls and tools](https://docs.stripe.com/issuing/manage-fraud.md): Understand how transaction fraud can impact your Issuing program and the steps you can take to combat it.
 - [Add funds to your card program](https://docs.stripe.com/issuing/adding-funds-to-your-card-program.md): Learn about your options to fund card spend.
+
 - [Stripe Issuing marketing guidelines](https://docs.stripe.com/issuing/marketing-guidance-europe-uk.md): Learn about marketing guidelines for Issuing programs in the United Kingdom and Europe.
 - [Order a custom bundle](https://docs.stripe.com/issuing/cards/physical/order-custom-bundle.md): Order your custom physical bundle.
 - [Use cards at automated teller machines (ATMs)](https://docs.stripe.com/issuing/purchases/atm-usage.md): Learn how you can use your Stripe Issuing cards at ATMs.
@@ -408,9 +409,10 @@ Automate sales tax, VAT, and GST compliance on all your transactions—low or no
 - [Monitor tax obligations](https://docs.stripe.com/tax/monitoring.md): Review potential registration obligations, thresholds, and notifications.
 - [Collect customer locations](https://docs.stripe.com/tax/customer-locations.md): Understand supported address formats and how Stripe Tax determines a customer location.
 - [Register for tax](https://docs.stripe.com/tax/registering.md): Add tax registrations to Stripe after registering with the tax authority.
-- [Use Stripe to register for US sales tax](https://docs.stripe.com/tax/use-stripe-to-register.md): Check eligibility for Stripe’s Register for me service.
-- [File and remit tax](https://docs.stripe.com/tax/filing.md): Compare filing options and partner-specific availability and pricing.
+- [Use Stripe to register for US sales tax](https://docs.stripe.com/tax/use-stripe-to-register/united-states.md): Check eligibility for Stripe’s Register for me service.
+- [File and remit tax](https://docs.stripe.com/tax/filing.md): Compare automated filing, filing partners, and self-filing options.
 - [File US sales tax with Stripe](https://docs.stripe.com/tax/file-with-stripe.md): Set up TaxJar filing from the Stripe Dashboard.
+- [File taxes outside the US](https://docs.stripe.com/tax/file-with-stripe-outside-us.md): Set up Stripe filing for supported registrations outside the US.
 - [File tax with Taxually](https://docs.stripe.com/tax/file-with-taxually.md): Set up Taxually filing where it is available.
 - [Product tax codes](https://docs.stripe.com/tax/tax-codes.md): Authoritative complete list of active Stripe Tax product tax code (`txcd_`) identifiers and their definitions. Use only exact `txcd_` values from this list; never infer or construct an identifier.
 - [Tax for digital products](https://docs.stripe.com/tax/digital-products.md): Select a tax code that matches a digital product’s delivery method, access type, and customer type.
@@ -578,6 +580,7 @@ Treasury for Platforms is Stripe’s embedded finance API (v2) for Connect platf
 - [Treasury for platforms marketing compliance](https://docs.stripe.com/treasury/connect/compliance.md): Design compliant Treasury for platforms marketing campaigns.
 - [Handle complaints](https://docs.stripe.com/treasury/connect/handle-complaints.md): Learn how to properly handle complaints about Treasury for platforms or Stripe Issuing.
 - [Treasury for platforms messaging](https://docs.stripe.com/treasury/connect/marketing.md): Create precise messaging for your users that complies with regulations.
+- [Treasury disclosure component](https://docs.stripe.com/treasury/connect/disclosure-component.md): Embed a Treasury disclosure component directly on your website.
 
 ### Account management
 

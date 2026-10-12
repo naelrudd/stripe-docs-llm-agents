@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 535
+Pages: 539
 
 | Path | First heading |
 |---|---|
@@ -166,6 +166,7 @@ Pages: 535
 | [elements/express-checkout-element.md](https://docs.stripe.com/elements/express-checkout-element.md) | Express Checkout Element |
 | [elements.md](https://docs.stripe.com/elements.md) | Stripe Web Elements |
 | [event-destinations.md](https://docs.stripe.com/event-destinations.md) | Integrate with events |
+| [events/set-up-events.md](https://docs.stripe.com/events/set-up-events.md) | Set up events |
 | [financial-connections/ach-direct-debit-payments.md](https://docs.stripe.com/financial-connections/ach-direct-debit-payments.md) | Collect a bank account to use ACH Direct Debit payments with account data |
 | [financial-connections/balances.md](https://docs.stripe.com/financial-connections/balances.md) | Access balances for a Financial Connections account |
 | [financial-connections/connect-payouts.md](https://docs.stripe.com/financial-connections/connect-payouts.md) | Collect a bank account to enhance Connect payouts |
@@ -409,6 +410,7 @@ Pages: 535
 | [tax/connect.md](https://docs.stripe.com/tax/connect.md) | Use Stripe Tax with Connect |
 | [tax/customer-locations.md](https://docs.stripe.com/tax/customer-locations.md) | Collect customer addresses |
 | [tax/digital-products.md](https://docs.stripe.com/tax/digital-products.md) | Tax for digital products |
+| [tax/file-with-stripe-outside-us.md](https://docs.stripe.com/tax/file-with-stripe-outside-us.md) | File taxes outside the US |
 | [tax/file-with-stripe.md](https://docs.stripe.com/tax/file-with-stripe.md) | File with Stripe |
 | [tax/file-with-taxually.md](https://docs.stripe.com/tax/file-with-taxually.md) | File with Taxually |
 | [tax/filing.md](https://docs.stripe.com/tax/filing.md) | File and remit |
@@ -435,6 +437,7 @@ Pages: 535
 | [tax/tax-for-platforms.md](https://docs.stripe.com/tax/tax-for-platforms.md) | Tax for software platforms |
 | [tax/tax-rates.md](https://docs.stripe.com/tax/tax-rates.md) | Tax rates |
 | [tax/testing.md](https://docs.stripe.com/tax/testing.md) | Testing Stripe Tax |
+| [tax/use-stripe-to-register/united-states.md](https://docs.stripe.com/tax/use-stripe-to-register/united-states.md) | Use Stripe to register for sales tax |
 | [tax/use-stripe-to-register.md](https://docs.stripe.com/tax/use-stripe-to-register.md) | Use Stripe to register for sales tax |
 | [tax/zero-tax.md](https://docs.stripe.com/tax/zero-tax.md) | Zero tax amounts and reverse charges |
 | [tax.md](https://docs.stripe.com/tax.md) | Stripe Tax |
@@ -470,6 +473,7 @@ Pages: 535
 | [treasury/connect/account-management/working-with-balances-and-transactions.md](https://docs.stripe.com/treasury/connect/account-management/working-with-balances-and-transactions.md) | Working with balances and transactions |
 | [treasury/connect/build-an-integration.md](https://docs.stripe.com/treasury/connect/build-an-integration.md) | Build an integration with Treasury for platforms |
 | [treasury/connect/compliance.md](https://docs.stripe.com/treasury/connect/compliance.md) | Treasury for platforms product marketing, design, and compliance guidelines |
+| [treasury/connect/disclosure-component.md](https://docs.stripe.com/treasury/connect/disclosure-component.md) | Treasury disclosure component |
 | [treasury/connect/disclosures.md](https://docs.stripe.com/treasury/connect/disclosures.md) | Compliance disclosures |
 | [treasury/connect/examples/cross-border-and-automatic-transfer-rules.md](https://docs.stripe.com/treasury/connect/examples/cross-border-and-automatic-transfer-rules.md) | Cross-border payouts and automatic transfer rules |
 | [treasury/connect/examples/financial-accounts.md](https://docs.stripe.com/treasury/connect/examples/financial-accounts.md) | Use Treasury for platforms and Issuing to set up financial accounts and cards |
