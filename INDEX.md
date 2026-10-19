@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 539
+Pages: 541
 
 | Path | First heading |
 |---|---|
@@ -67,6 +67,7 @@ Pages: 539
 | [billing/subscriptions/usage-based/recording-usage.md](https://docs.stripe.com/billing/subscriptions/usage-based/recording-usage.md) | Record usage for billing |
 | [billing/subscriptions/use-cases.md](https://docs.stripe.com/billing/subscriptions/use-cases.md) | Subscription use cases |
 | [billing/taxes/collect-taxes.md](https://docs.stripe.com/billing/taxes/collect-taxes.md) | Collect taxes for recurring payments |
+| [billing/usage-based.md](https://docs.stripe.com/billing/usage-based.md) | Usage-based billing |
 | [billing.md](https://docs.stripe.com/billing.md) | Billing |
 | [capital/api-integration.md](https://docs.stripe.com/capital/api-integration.md) | Build a custom Capital program |
 | [capital/connect-integration.md](https://docs.stripe.com/capital/connect-integration.md) | How Capital affects your Connect integration |
@@ -265,6 +266,7 @@ Pages: 539
 | [payments/affirm.md](https://docs.stripe.com/payments/affirm.md) | Affirm payments |
 | [payments/afterpay-clearpay.md](https://docs.stripe.com/payments/afterpay-clearpay.md) | Afterpay and Clearpay payments |
 | [payments/analytics/acceptance.md](https://docs.stripe.com/payments/analytics/acceptance.md) | Acceptance analytics |
+| [payments/analytics/optimization.md](https://docs.stripe.com/payments/analytics/optimization.md) | Payments optimization |
 | [payments/analytics.md](https://docs.stripe.com/payments/analytics.md) | Payments analytics |
 | [payments/bank-debits.md](https://docs.stripe.com/payments/bank-debits.md) | Bank Debits |
 | [payments/bank-redirects.md](https://docs.stripe.com/payments/bank-redirects.md) | Bank redirects |

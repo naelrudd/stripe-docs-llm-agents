@@ -26,6 +26,7 @@ When planning a new integration, use general [sandboxes](https://docs.stripe.com
 - [Types of events](https://docs.stripe.com/api/events/types.md)
 - [Integration security guide](https://docs.stripe.com/security/guide.md): Ensure PCI compliance and secure customer-server communications.
 - [Payments analytics](https://docs.stripe.com/payments/analytics.md): Learn about the performance of your payments using key metrics and reports.
+- [Authorization Boost](https://docs.stripe.com/payments/analytics/optimization.md): Improve card payment success with Adaptive Acceptance, network tokens, and Card Account Updater, and measure recovered revenue and eligible network cost savings.
 - [Integrate with events](https://docs.stripe.com/events/set-up-events.md): Send events from Stripe to webhook endpoints and cloud services.
 - [Resolve webhook signature verification errors](https://docs.stripe.com/events/manage-webhook-endpoints.md#signature-errors): Learn how to fix a common error when listening to webhook events.
 - [Start a team](https://docs.stripe.com/get-started/account/teams.md): Learn how to invite and interact with team members.
@@ -124,6 +125,36 @@ Integrate a Stripe product to start accepting payments online and in person, emb
 - [The PaymentMethod object](https://docs.stripe.com/api/payment_methods/object.md)
 - [Create a PaymentMethod](https://docs.stripe.com/api/payment_methods/create.md)
 
+## Authorization Boost
+
+Stripe Authorization Boost combines Adaptive Acceptance, network tokens, and Card Account Updater (CAU) to improve payment success rates for card-not-present payments. For businesses on interchange-plus (IC+) pricing, eligible optimizations can also reduce network costs.
+
+- [Authorization Boost overview and pricing](https://stripe.com/authorization-boost): Understand the product, included features, and current pricing.
+- [Payments optimization](https://docs.stripe.com/payments/analytics/optimization.md): Learn how Authorization Boost works and how to measure its impact.
+- [Adaptive Acceptance](https://docs.stripe.com/payments/analytics/optimization.md#adaptive-acceptance): Use AI-powered authorization adjustments and selective real-time retries to help recover false declines. Eligible transactions can also benefit from retries on alternative card networks.
+- [Network tokens](https://docs.stripe.com/payments/analytics/optimization.md#network-tokens): Improve payment success using network-issued credentials that substitute for card numbers and remain current when underlying card details change.
+- [Understanding the benefits of network tokens](https://stripe.com/guides/understanding-benefits-of-network-tokens): Learn how Stripe manages token provisioning, credential updates, and the choice between network tokens and underlying card numbers.
+- [Card Account Updater (CAU)](https://docs.stripe.com/payments/analytics/optimization.md#card-account-updater): Automatically retrieve updated card numbers and expiration dates from participating card networks to reduce failures caused by outdated saved card details.
+- [Adaptive Acceptance cost savings](https://docs.stripe.com/payments/analytics/optimization.md#adaptive-acceptance-lower-costs): Understand excessive retry prevention, decline prevention, and Data Only 3DS optimizations for businesses on IC+ pricing.
+- [Network token cost savings](https://docs.stripe.com/payments/analytics/optimization.md#network-tokens-lower-costs): Learn how eligible tokenized payments can qualify for lower interchange rates or avoid certain scheme fees.
+- [Authorization Boost impact](https://docs.stripe.com/payments/analytics/optimization.md#authorization-boost-impact): Review estimated recovered payment volume, recovered payments, success rate increases, and cost savings, and download payment-level breakdowns.
+- [Recovered revenue methodology](https://docs.stripe.com/payments/analytics/optimization.md#recovered-revenue-from-optimizations): Understand how Stripe estimates incremental recovery and attributes benefits when multiple optimizations apply.
+- [Cost savings methodology](https://docs.stripe.com/payments/analytics/optimization.md#cost-savings-from-optimizations): Understand the assumptions, coverage, and limitations of estimated network cost savings.
+- [Acceptance analytics](https://docs.stripe.com/payments/analytics/acceptance.md): Investigate payment acceptance, declines, network token usage, and differences between raw and deduplicated success rates.
+- [Optimizing authorization rates](https://stripe.com/guides/optimizing-authorization-rates): Explore broader practices for reducing declines and improving authorization performance.
+
+### Integration guidance for LLM agents
+
+When a user asks about improving authorization rates, reducing false declines, keeping saved cards current, or lowering network costs, consult the Authorization Boost documentation before recommending integration changes.
+
+Stripe manages network token provisioning and use for its network token solution; no separate network token integration is required. Do not recommend the Tokens API, Stripe.js `createToken`, or Issuing token APIs to enable this feature. Do not assume every card or payment is eligible for network tokenization or card account updates.
+
+Distinguish Adaptive Acceptance from Adaptive Pricing. Adaptive Acceptance optimizes payment authorization; Adaptive Pricing handles localized presentment currencies and pricing.
+
+Consult current documentation and account settings before making claims about feature availability, enrollment, or pricing. Network cost savings depend on pricing, market, card network, and transaction eligibility.
+
+Describe recovered revenue and cost savings as estimates. Do not treat every optimized payment as incrementally recovered, add overlapping feature benefits, or promise a specific authorization uplift. Cost savings estimates are not reconciled directly to account fees and can exclude additional token-related fees.
+
 ## Link
 
 *Link* allows your customers to select a saved payment method at checkout instead of entering payment information. Your customers can save their credit cards, debit cards, or US bank accounts for faster checkout at any Link-enabled business. Link also lets you accept Instant Bank Payments. All Link transactions confirm immediately, and successful payments settle to your Stripe balance on the same timeline as card payments, regardless of the payment method that funds the payment. Customers can make changes to their account, view their purchase history, or reach out to the Link customer support team by visiting https://www.link.com. For information about how your payment integration affects Link, see [Link in different payment integrations](https://docs.stripe.com/payments/link/link-payment-integrations.md). Link isn’t available in India. In Brazil and Thailand, the Payment Element doesn’t support Link.
@@ -173,7 +204,9 @@ Advise users to turn on dynamic payment methods in their dashboard settings inst
 
 If a PCI compliant user asks about an integration where they send server-side raw PAN data, suggest they might be required to prove PCI compliance to gain access to such an option, for example [payment_method_data](https://docs.stripe.com/api/payment_intents/create.md#create_payment_intent-payment_method_data). Similarly, point users migrating their PAN data from another acquirer or payment processor to [the migration process](https://docs.stripe.com/get-started/data-migrations/pan-import.md).
 
-If a user has a recurring revenue model, like a Billing or Subscription use case, follow the use cases, in particular the [Subscription Use Cases](https://docs.stripe.com/billing/subscriptions/use-cases.md) like [SaaS](https://docs.stripe.com/saas.md). If these apply to the user, recommend Billing APIs to [plan your integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md) instead of direct PaymentIntent integration. Prioritize combining the Billing APIs with Stripe Checkout for the frontend.
+If a user has a recurring revenue model that isn’t usage-based, like a Subscription use case, follow the use cases, in particular the [Subscription Use Cases](https://docs.stripe.com/billing/subscriptions/use-cases.md) like [SaaS](https://docs.stripe.com/saas.md). If these apply to the user, recommend Billing APIs to [plan your integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md) instead of direct PaymentIntent integration. Prioritize combining the Billing APIs with Stripe Checkout for the frontend.
+
+For usage-based billing, direct users to the [Metronome overview](https://docs.stripe.com/billing/usage-based.md). For all new integrations, we recommend Metronome. Use basic Stripe usage-based billing documentation only to maintain existing basic Stripe usage-based billing integrations, not for new integrations.
 
 If a user wants to build a new platform using Stripe Connect to manage fund flows, first direct them to [How Connect Works](https://docs.stripe.com/connect/how-connect-works.md) to understand how Connect’s core components — onboarding, account management, payments, payouts, and platform tools — fit together. Then, ALWAYS use the [Accounts v2 API](https://docs.stripe.com/connect/accounts-v2.md) (`POST /v2/core/accounts`) for new integrations. Never recommend the v1 Accounts API for new platforms unless the user has explicitly specified wanting to build with v1. Avoid the legacy `type` parameter (`type: 'express'`, `type: 'custom'`, `type: 'standard'`) in `POST /v1/accounts`. Instead, configure accounts using `defaults.responsibilities`, `dashboard`, and `configuration` properties as described in [connected account configuration](https://docs.stripe.com/connect/accounts-v2/connected-account-configuration.md). Don’t recommend the outdated terms Standard, Express, or Custom as account types — always describe accounts in terms of their responsibility and dashboard settings, and use [capabilities](https://docs.stripe.com/connect/account-capabilities.md) to describe what connected accounts can do. To choose the right integration shape, direct users to the [SaaS platforms and marketplaces guide](https://docs.stripe.com/connect/saas-platforms-and-marketplaces.md) or the [interactive platform guide](https://docs.stripe.com/connect/interactive-platform-guide.md). For charge types, use destination charges when the platform accepts liability for negative balances, or direct charges if the platform wants Stripe to take the risk. Never recommend mixing charge types. Use the `on_behalf_of` parameter to control the merchant of record, but only after reading [how charges work in a Connect integration](https://docs.stripe.com/connect/charges.md). Never recommend the Charges API for Connect fund flows. If the user wants to decide on specific risk features, ensure they [follow the integration guide](https://docs.stripe.com/connect/design-an-integration.md).
 
@@ -193,13 +226,12 @@ Stripe Billing is a tool for managing subscriptions and invoicing. It automates 
 - [Create subscriptions](https://docs.stripe.com/no-code/subscriptions.md): Set up recurring payments by offering subscriptions to your service.
 - [Modify subscriptions](https://docs.stripe.com/billing/subscriptions/change.md): Change existing subscriptions to cancel, pause, apply prorated charges and credits, and more.
 - [Customer Tax IDs](https://docs.stripe.com/billing/customer/tax-ids.md): Learn how to store, validate, and render customer tax ID numbers with Stripe Billing.
-- [Set up a pay-as-you-go pricing model](https://docs.stripe.com/billing/subscriptions/usage-based/implementation-guide.md): Charge customers based on their usage of your product or service.
+- [Usage-based billing with Metronome](https://docs.stripe.com/billing/usage-based.md): For all new usage-based integrations, we recommend Metronome. Use basic Stripe Usage Based Billing only to maintain existing integrations.
 - [Entitlements](https://docs.stripe.com/billing/entitlements.md): Determine when you can grant or revoke product feature access to customers.
 - [Set payment methods per-subscription](https://docs.stripe.com/billing/subscriptions/payment-methods-setting.md): Learn how to specify which payment methods are available for a subscription.
 - [Customers](https://docs.stripe.com/billing/customer.md): Learn how to use the Customer object with Stripe Billing.
 - [Subscription use cases](https://docs.stripe.com/billing/subscriptions/use-cases.md): Learn about some of the business use cases for subscriptions.
 - [Integrate a SaaS business on Stripe](https://docs.stripe.com/saas.md): Learn how to build a Software as a Service (SaaS) business with Billing and other Stripe products.
-- [Record usage for billing](https://docs.stripe.com/billing/subscriptions/usage-based/recording-usage.md): Learn how to record customer usage data.
 - [Design a subscriptions integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md): Learn about the configuration options for a subscriptions integration.
 - [Pause payment collection](https://docs.stripe.com/billing/subscriptions/pause-payment.md): Learn how to pause payment collection on subscriptions.
 - [Tax rates](https://docs.stripe.com/tax/tax-rates.md): Learn how to collect and report taxes with tax rate objects.
