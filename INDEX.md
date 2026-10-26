@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 541
+Pages: 542
 
 | Path | First heading |
 |---|---|
@@ -113,6 +113,7 @@ Pages: 541
 | [connect/how-connect-works.md](https://docs.stripe.com/connect/how-connect-works.md) | How Connect works |
 | [connect/identity-verification.md](https://docs.stripe.com/connect/identity-verification.md) | Identity verification for connected accounts |
 | [connect/interactive-platform-guide.md](https://docs.stripe.com/connect/interactive-platform-guide.md) | Build your Connect integration |
+| [connect/manage-connected-account-payouts.md](https://docs.stripe.com/connect/manage-connected-account-payouts.md) | Manage connected account payouts |
 | [connect/manual-payouts.md](https://docs.stripe.com/connect/manual-payouts.md) | Using manual payouts |
 | [connect/marketplace/quickstart.md](https://docs.stripe.com/connect/marketplace/quickstart.md) | Marketplace quickstart |
 | [connect/marketplace.md](https://docs.stripe.com/connect/marketplace.md) | Build a marketplace |

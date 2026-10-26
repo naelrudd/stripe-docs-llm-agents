@@ -1,3 +1,3 @@
 source: https://docs.stripe.com/llms.txt
-pages: 541
-synced: 2026-10-19T08:49:55Z
+pages: 542
+synced: 2026-10-26T08:52:16Z

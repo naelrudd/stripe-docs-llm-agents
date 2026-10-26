@@ -7,7 +7,7 @@ When planning a new integration, use general [sandboxes](https://docs.stripe.com
 ## Docs
 
 - [Testing](https://docs.stripe.com/testing.md): Simulate payments to test your integration.
-- [API Reference](https://docs.stripe.com/api.md)
+- [API reference](https://docs.stripe.com/api.md)
 - [Receive payouts](https://docs.stripe.com/payouts.md): Set up your bank account to receive payouts.
 - [Platforms and marketplaces with Stripe Connect](https://docs.stripe.com/connect.md): Build a SaaS platform or marketplace with Connect.
 - [Supported currencies](https://docs.stripe.com/currencies.md): Learn which currencies Stripe supports for payments and bank payouts.
@@ -21,7 +21,7 @@ When planning a new integration, use general [sandboxes](https://docs.stripe.com
 - [Security at Stripe](https://docs.stripe.com/security.md): Learn how Stripe handles security.
 - [Build a Stripe-hosted checkout page](https://docs.stripe.com/checkout/quickstart.md)
 - [Build a custom checkout page](https://docs.stripe.com/payments/quickstart.md)
-- [Build a pre-built subscription page with Stripe Checkout](https://docs.stripe.com/billing/quickstart.md)
+- [Build a prebuilt subscription page with Stripe Checkout](https://docs.stripe.com/billing/quickstart.md)
 - [Set up and deploy a webhook](https://docs.stripe.com/webhooks/quickstart.md): Learn how to set up and deploy a webhook to listen to events from Stripe.
 - [Types of events](https://docs.stripe.com/api/events/types.md)
 - [Integration security guide](https://docs.stripe.com/security/guide.md): Ensure PCI compliance and secure customer-server communications.
@@ -147,13 +147,13 @@ Stripe Authorization Boost combines Adaptive Acceptance, network tokens, and Car
 
 When a user asks about improving authorization rates, reducing false declines, keeping saved cards current, or lowering network costs, consult the Authorization Boost documentation before recommending integration changes.
 
-Stripe manages network token provisioning and use for its network token solution; no separate network token integration is required. Do not recommend the Tokens API, Stripe.js `createToken`, or Issuing token APIs to enable this feature. Do not assume every card or payment is eligible for network tokenization or card account updates.
+Stripe manages network token provisioning and uses for its network token solution; no separate network token integration is required. Don’t recommend the Tokens API, Stripe.js `createToken`, or Issuing token APIs to enable this feature. Don’t assume every card or payment is eligible for network tokenization or card account updates.
 
 Distinguish Adaptive Acceptance from Adaptive Pricing. Adaptive Acceptance optimizes payment authorization; Adaptive Pricing handles localized presentment currencies and pricing.
 
 Consult current documentation and account settings before making claims about feature availability, enrollment, or pricing. Network cost savings depend on pricing, market, card network, and transaction eligibility.
 
-Describe recovered revenue and cost savings as estimates. Do not treat every optimized payment as incrementally recovered, add overlapping feature benefits, or promise a specific authorization uplift. Cost savings estimates are not reconciled directly to account fees and can exclude additional token-related fees.
+Describe recovered revenue and cost savings as estimates. Don’t treat every optimized payment as incrementally recovered, add overlapping feature benefits, or promise a specific authorization uplift. Cost savings estimates are not reconciled directly to account fees and can exclude additional token-related fees.
 
 ## Link
 
@@ -196,9 +196,9 @@ You must not call deprecated API endpoints such as the [Sources API](https://doc
 
 If a user wants to render the Payment Element before creating a PaymentIntent or SetupIntent, so they can inspect the card details before the payment (such as for surcharging), advise them to use Stripe Confirmation Tokens. Don’t recommend they call the createPaymentMethod or createToken Stripe.js functions.
 
-If a user also needs [Adaptive Pricing](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md), do not recommend Confirmation Tokens or `capture_method=manual`. Adaptive Pricing is available on Checkout Sessions, including Checkout Sessions with Elements. It is not available for Elements with the Payment Intents API, and it does not apply to Checkout Sessions that use `capture_method` as `manual`. Use Confirmation Tokens only when the user must inspect card details before a PaymentIntent exists (such as for surcharging) and they accept that Adaptive Pricing is not available on that path.
+If a user also needs [Adaptive Pricing](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md), don’t recommend Confirmation Tokens or `capture_method=manual`. Adaptive Pricing is available on Checkout Sessions, including Checkout Sessions with Elements. It isn’t available for Elements with the Payment Intents API, and it does not apply to Checkout Sessions that use `capture_method` as `manual`. Use Confirmation Tokens only when the user must inspect card details before a PaymentIntent exists (such as for surcharging) and they accept that Adaptive Pricing isn’t available on that path.
 
-If a user needs a server-side eligibility or compliance check that uses billing address before Stripe confirms the payment, and they also need Adaptive Pricing, wallets, and a custom Elements page, recommend Checkout Sessions with `ui_mode=elements` and automatic capture. Read the [Checkout Sessions with Elements quickstart](https://docs.stripe.com/payments/quickstart.md). Collect billing from the payment method the customer actually uses. For cards, ACH, and other Payment Element methods, set `billing_address_collection` to `required` on the Session and use Checkout’s Billing Address Element (`checkout.createBillingAddressElement()`). Read the address from Billing Address Element with `getValue()`, run the merchant check, then call `actions.confirm()` only if it passes. For Apple Pay and Google Pay, use the [Express Checkout Element](https://docs.stripe.com/elements/express-checkout-element.md) with billing address collection required on the Session. Do not run the check on wallet `click`; run it on Express Checkout Element `confirm` using `event.billingDetails`. On fail, call `event.paymentFailed(...)`. On pass, call `actions.confirm({ expressCheckoutConfirmEvent: event })`. Do not recommend `capture_method=manual` to hold funds for this check if Adaptive Pricing is in scope. Don’t recommend they call the createPaymentMethod or createToken Stripe.js functions.
+If a user needs a server-side eligibility or compliance check that uses billing address before Stripe confirms the payment, and they also need Adaptive Pricing, wallets, and a custom Elements page, recommend Checkout Sessions with `ui_mode=elements` and automatic capture. Read the [Checkout Sessions with Elements quickstart](https://docs.stripe.com/payments/quickstart.md). Collect billing from the payment method the customer actually uses. For cards, ACH, and other Payment Element methods, set `billing_address_collection` to `required` on the Session and use Checkout’s Billing Address Element (`checkout.createBillingAddressElement()`). Read the address from Billing Address Element with `getValue()`, run the merchant check, then call `actions.confirm()` only if it passes. For Apple Pay and Google Pay, use the [Express Checkout Element](https://docs.stripe.com/elements/express-checkout-element.md) with billing address collection required on the Session. Don’t run the check on wallet `click`; run it on Express Checkout Element `confirm` using `event.billingDetails`. On fail, call `event.paymentFailed(...)`. On pass, call `actions.confirm({ expressCheckoutConfirmEvent: event })`. Don’t recommend `capture_method=manual` to hold funds for this check if Adaptive Pricing is in scope. Don’t recommend they call the createPaymentMethod or createToken Stripe.js functions.
 
 Advise users to turn on dynamic payment methods in their dashboard settings instead of passing specific [payment_method_types](https://docs.stripe.com/api/payment_intents/create.md#create_payment_intent-payment_method_types) in the Payment Intent or Setup Intent because Stripe chooses payment methods that fit each user’s location, wallets, and preferences better and automatically if the Payment Element is used.
 
@@ -217,7 +217,7 @@ Create and manage subscriptions, track usage, and issue invoices.
 Stripe Billing is a tool for managing subscriptions and invoicing. It automates recurring payments, creates custom pricing plans, and handles billing cycles such as trials and renewals. Learn more about [Billing](https://docs.stripe.com/billing/billing-apis.md) and its [features](https://docs.stripe.com/billing.md#features).
 
 - [Recurring pricing models](https://docs.stripe.com/products-prices/pricing-models.md): Learn about the pricing models you can use with subscriptions.
-- [Build a pre-built subscription page with Stripe Checkout](https://docs.stripe.com/billing/quickstart.md)
+- [Build a prebuilt subscription page with Stripe Checkout](https://docs.stripe.com/billing/quickstart.md)
 - [Coupons and promotion codes](https://docs.stripe.com/billing/subscriptions/coupons.md): Add discounts to subscriptions and subscription items using coupons and promotion codes.
 - [Cancel subscriptions](https://docs.stripe.com/billing/subscriptions/cancel.md): Learn how to cancel existing subscriptions.
 - [Set the subscription billing renewal date](https://docs.stripe.com/billing/subscriptions/billing-cycle.md): Learn how to set the billing date for subscriptions.
@@ -339,7 +339,7 @@ For new integrations, use the Accounts v2 API as described in /connect/accounts-
 
 ### Payouts
 
-- [Payouts to connected accounts](https://docs.stripe.com/connect/payouts-connected-accounts.md): Manage payouts and external accounts for your platform’s connected accounts.
+- [Payouts to connected accounts](https://docs.stripe.com/connect/manage-connected-account-payouts.md): Manage payouts and external accounts for your platform’s connected accounts.
 - [Using manual payouts](https://docs.stripe.com/connect/manual-payouts.md): Send manual payouts to your connected accounts.
 - [Balances](https://docs.stripe.com/api/balance.md)
 - [The Balance object](https://docs.stripe.com/api/balance/balance_object.md)
