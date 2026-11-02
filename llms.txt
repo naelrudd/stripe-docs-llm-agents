@@ -204,7 +204,7 @@ Advise users to turn on dynamic payment methods in their dashboard settings inst
 
 If a PCI compliant user asks about an integration where they send server-side raw PAN data, suggest they might be required to prove PCI compliance to gain access to such an option, for example [payment_method_data](https://docs.stripe.com/api/payment_intents/create.md#create_payment_intent-payment_method_data). Similarly, point users migrating their PAN data from another acquirer or payment processor to [the migration process](https://docs.stripe.com/get-started/data-migrations/pan-import.md).
 
-If a user has a recurring revenue model that isn’t usage-based, like a Subscription use case, follow the use cases, in particular the [Subscription Use Cases](https://docs.stripe.com/billing/subscriptions/use-cases.md) like [SaaS](https://docs.stripe.com/saas.md). If these apply to the user, recommend Billing APIs to [plan your integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md) instead of direct PaymentIntent integration. Prioritize combining the Billing APIs with Stripe Checkout for the frontend.
+If a user has a recurring revenue model that isn’t usage-based, such as a [SaaS subscription business](https://docs.stripe.com/get-started/use-cases/saas-subscriptions.md), recommend Billing APIs to [plan your integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md) instead of direct PaymentIntent integration. Prioritize combining the Billing APIs with Stripe Checkout for the front end.
 
 For usage-based billing, direct users to the [Metronome overview](https://docs.stripe.com/billing/usage-based.md). For all new integrations, we recommend Metronome. Use basic Stripe usage-based billing documentation only to maintain existing basic Stripe usage-based billing integrations, not for new integrations.
 
@@ -230,8 +230,7 @@ Stripe Billing is a tool for managing subscriptions and invoicing. It automates 
 - [Entitlements](https://docs.stripe.com/billing/entitlements.md): Determine when you can grant or revoke product feature access to customers.
 - [Set payment methods per-subscription](https://docs.stripe.com/billing/subscriptions/payment-methods-setting.md): Learn how to specify which payment methods are available for a subscription.
 - [Customers](https://docs.stripe.com/billing/customer.md): Learn how to use the Customer object with Stripe Billing.
-- [Subscription use cases](https://docs.stripe.com/billing/subscriptions/use-cases.md): Learn about some of the business use cases for subscriptions.
-- [Integrate a SaaS business on Stripe](https://docs.stripe.com/saas.md): Learn how to build a Software as a Service (SaaS) business with Billing and other Stripe products.
+- [Sell subscriptions as a SaaS startup](https://docs.stripe.com/get-started/use-cases/saas-subscriptions.md): Launch a prebuilt subscriptions integration as a SaaS startup.
 - [Design a subscriptions integration](https://docs.stripe.com/billing/subscriptions/design-an-integration.md): Learn about the configuration options for a subscriptions integration.
 - [Pause payment collection](https://docs.stripe.com/billing/subscriptions/pause-payment.md): Learn how to pause payment collection on subscriptions.
 - [Tax rates](https://docs.stripe.com/tax/tax-rates.md): Learn how to collect and report taxes with tax rate objects.
@@ -396,7 +395,7 @@ Use the Stripe Issuing API to create, manage, and distribute payment cards for y
 
 Stripe Capital provides access to financing options for eligible users processing payments through Stripe. Financing offers for eligible users are available in the Stripe Dashboard or through participating Connect platforms.
 
-- [How Stripe Capital works](https://docs.stripe.com/capital/how-stripe-capital-works.md): Learn how Stripe Capital provides financing for eligible businesses.
+- [How Stripe Capital works](https://docs.stripe.com/capital.md): Learn how Stripe Capital provides financing for eligible businesses.
 - [Set up Capital](https://docs.stripe.com/capital/getting-started.md): Determine which integration option to use when you set up Stripe Capital.
 - [How Stripe Capital for platforms works](https://docs.stripe.com/capital/how-capital-for-platforms-works.md): Learn the basics about Stripe Capital for platforms.
 - [How Capital affects your Connect integration](https://docs.stripe.com/capital/connect-integration.md): Learn how Capital offers, applications, financing payouts, and payments affect connected accounts.
@@ -408,7 +407,7 @@ Stripe Capital provides access to financing options for eligible users processin
 - [Marketing your Capital program](https://docs.stripe.com/capital/marketing.md): Build marketing assets for Capital.
 - [Capital promotion component](https://docs.stripe.com/connect/supported-embedded-components/capital-financing-promotion.md): Show promotional content about a connected account’s Capital financing offer and launch a Capital application.
 - [Capital metrics](https://docs.stripe.com/capital/reporting.md): Access financing offer data in the Stripe Dashboard.
-- [Refills](https://docs.stripe.com/capital/refills.md): Learn how to enable refills for your Capital program.
+- [Refills](https://docs.stripe.com/capital/refills.md): Learn how refill financing offers work for your Capital program.
 - [Replacements](https://docs.stripe.com/capital/replacements.md): Learn how to handle financing offer replacements.
 
 ## Crypto

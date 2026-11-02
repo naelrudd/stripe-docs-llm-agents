@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 542
+Pages: 543
 
 | Path | First heading |
 |---|---|
@@ -188,6 +188,7 @@ Pages: 542
 | [get-started/data-migrations/pan-import.md](https://docs.stripe.com/get-started/data-migrations/pan-import.md) | Request a payments data import |
 | [get-started/development-environment.md](https://docs.stripe.com/get-started/development-environment.md) | Set up your development environment |
 | [get-started/test-developer-integration.md](https://docs.stripe.com/get-started/test-developer-integration.md) | Build and test new features |
+| [get-started/use-cases/saas-subscriptions.md](https://docs.stripe.com/get-started/use-cases/saas-subscriptions.md) | Sell subscriptions as a SaaS startup |
 | [get-started.md](https://docs.stripe.com/get-started.md) | Get started |
 | [identity/access-verification-results.md](https://docs.stripe.com/identity/access-verification-results.md) | Access verification results |
 | [identity/before-going-live.md](https://docs.stripe.com/identity/before-going-live.md) | Before going live |
