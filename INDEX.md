@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 543
+Pages: 552
 
 | Path | First heading |
 |---|---|
@@ -40,6 +40,7 @@ Pages: 543
 | [api.md](https://docs.stripe.com/api.md) | API Reference |
 | [atlas/83b-election.md](https://docs.stripe.com/atlas/83b-election.md) | Section 83(b) elections |
 | [atlas/83b-elections-non-us-founders.md](https://docs.stripe.com/atlas/83b-elections-non-us-founders.md) | File Section 83(b) elections as a non-US founder |
+| [atlas/agents.md](https://docs.stripe.com/atlas/agents.md) | Prepare an Atlas application with an agent or CLI |
 | [atlas/business-taxes.md](https://docs.stripe.com/atlas/business-taxes.md) | Business taxes |
 | [atlas/company-types.md](https://docs.stripe.com/atlas/company-types.md) | Company types |
 | [atlas/incorporation-documents.md](https://docs.stripe.com/atlas/incorporation-documents.md) | Incorporation documents |
@@ -454,8 +455,15 @@ Pages: 543
 | [terminal/mobile-readers.md](https://docs.stripe.com/terminal/mobile-readers.md) | Stripe Terminal mobile readers |
 | [terminal/network-requirements.md](https://docs.stripe.com/terminal/network-requirements.md) | Terminal network requirements |
 | [terminal/overview.md](https://docs.stripe.com/terminal/overview.md) | How Terminal works |
+| [terminal/payments/collect-card-payment.md](https://docs.stripe.com/terminal/payments/collect-card-payment.md) | Collect card payments |
+| [terminal/payments/connect-reader.md](https://docs.stripe.com/terminal/payments/connect-reader.md) | Connect to a reader |
+| [terminal/payments/ready-made-apps.md](https://docs.stripe.com/terminal/payments/ready-made-apps.md) | Use Terminal ready-made apps to accept in-person payments |
+| [terminal/payments/regional.md](https://docs.stripe.com/terminal/payments/regional.md) | Regional considerations |
+| [terminal/payments/setup-integration.md](https://docs.stripe.com/terminal/payments/setup-integration.md) | Set up your integration |
 | [terminal/payments/setup-reader/bbpos-wisepad3.md](https://docs.stripe.com/terminal/payments/setup-reader/bbpos-wisepad3.md) | Set up BBPOS WisePad 3 |
 | [terminal/payments/setup-reader/stripe-m2.md](https://docs.stripe.com/terminal/payments/setup-reader/stripe-m2.md) | Set up Stripe Reader M2 |
+| [terminal/payments/setup-reader/tap-to-pay.md](https://docs.stripe.com/terminal/payments/setup-reader/tap-to-pay.md) | Tap to Pay |
+| [terminal/payments/setup-reader.md](https://docs.stripe.com/terminal/payments/setup-reader.md) | Select a reader |
 | [terminal/quickstart.md](https://docs.stripe.com/terminal/quickstart.md) | Accept in-person payments |
 | [terminal/readers/bbpos-wisepad3.md](https://docs.stripe.com/terminal/readers/bbpos-wisepad3.md) | BBPOS WisePad 3 |
 | [terminal/readers/bbpos-wisepos-e.md](https://docs.stripe.com/terminal/readers/bbpos-wisepos-e.md) | BBPOS WisePOS E |
@@ -463,6 +471,7 @@ Pages: 543
 | [terminal/readers/stripe-m2.md](https://docs.stripe.com/terminal/readers/stripe-m2.md) | Stripe Reader M2 |
 | [terminal/readers/stripe-reader-s700-s710.md](https://docs.stripe.com/terminal/readers/stripe-reader-s700-s710.md) | Stripe Reader S700/S710 |
 | [terminal/references/sdk-migration-guide.md](https://docs.stripe.com/terminal/references/sdk-migration-guide.md) | Terminal SDK migration guide |
+| [terminal/references/testing.md](https://docs.stripe.com/terminal/references/testing.md) | Test Stripe Terminal |
 | [terminal/smart-readers.md](https://docs.stripe.com/terminal/smart-readers.md) | Stripe Terminal smart readers |
 | [terminal.md](https://docs.stripe.com/terminal.md) | Terminal |
 | [testing/wallets.md](https://docs.stripe.com/testing/wallets.md) | Test Apple and Google wallet rendering |
