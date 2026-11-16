@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 552
+Pages: 554
 
 | Path | First heading |
 |---|---|
@@ -265,6 +265,7 @@ Pages: 552
 | [payments/accept-a-payment.md](https://docs.stripe.com/payments/accept-a-payment.md) | Accept a payment |
 | [payments/accept-stablecoin-payments.md](https://docs.stripe.com/payments/accept-stablecoin-payments.md) | Accept stablecoin payments |
 | [payments/advanced/collect-addresses.md](https://docs.stripe.com/payments/advanced/collect-addresses.md) | Collect physical addresses and phone numbers |
+| [payments/advanced/save-during-payment.md](https://docs.stripe.com/payments/advanced/save-during-payment.md) | Save a customer's payment method when they use it for a payment |
 | [payments/advanced.md](https://docs.stripe.com/payments/advanced.md) | Build an advanced payments integration |
 | [payments/affirm.md](https://docs.stripe.com/payments/affirm.md) | Affirm payments |
 | [payments/afterpay-clearpay.md](https://docs.stripe.com/payments/afterpay-clearpay.md) | Afterpay and Clearpay payments |
@@ -502,6 +503,7 @@ Pages: 552
 | [treasury/connect/handling-complaints.md](https://docs.stripe.com/treasury/connect/handling-complaints.md) | Handling complaints |
 | [treasury/connect/how-treasury-for-platforms-works.md](https://docs.stripe.com/treasury/connect/how-treasury-for-platforms-works.md) | How Treasury for platforms works |
 | [treasury/connect/legacy/v1/examples/sample-app.md](https://docs.stripe.com/treasury/connect/legacy/v1/examples/sample-app.md) | Issuing and Treasury for platforms sample app |
+| [treasury/connect/legacy/v1.md](https://docs.stripe.com/treasury/connect/legacy/v1.md) | Treasury for platforms |
 | [treasury/connect/marketing-financial-accounts.md](https://docs.stripe.com/treasury/connect/marketing-financial-accounts.md) | Marketing Treasury for platforms |
 | [treasury/connect/marketing.md](https://docs.stripe.com/treasury/connect/marketing.md) | Treasury for platforms messaging |
 | [treasury/connect/money-movement/timelines.md](https://docs.stripe.com/treasury/connect/money-movement/timelines.md) | Money movement timelines |

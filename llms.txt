@@ -110,7 +110,7 @@ Integrate a Stripe product to start accepting payments online and in person, emb
 - [Multi-currency settlement](https://docs.stripe.com/payouts/multi-currency-settlement.md): Accept, settle, and pay out funds in multiple currencies.
 - [Stripe decline codes](https://docs.stripe.com/declines/codes.md): Learn about Stripe decline codes and how to resolve them when a charge fails.
 - [Place a hold on a payment method](https://docs.stripe.com/payments/place-a-hold-on-a-payment-method.md): Separate payment authorization and capture to create a charge now, but capture funds later.
-- [Save a customer’s payment method when they use it for a payment](https://docs.stripe.com/payments/save-during-payment.md): Learn how to save your customer’s payment details for future purchases when they make a payment.
+- [Save a customer’s payment method when they use it for a payment](https://docs.stripe.com/payments/advanced/save-during-payment.md): Learn how to save your customer’s payment details for future purchases when they make a payment with the Payment Intents API.
 - [Save a customer’s payment method without making a payment](https://docs.stripe.com/payments/save-and-reuse.md): Learn how to save a payment method and charge it later.
 - [Payment status updates](https://docs.stripe.com/payments/payment-intents/verifying-status.md): Monitor and verify payment status, so that you can respond to successful and failed payments.
 - [Payment method integration options](https://docs.stripe.com/payments/payment-methods/integration-options.md): Learn about the different ways to integrate payment methods.
@@ -322,7 +322,7 @@ Onboarding follows the Accounts v2 model. See /connect/accounts-v2 for how to cr
 
 ### Accounts and capabilities
 
-For new integrations, use the Accounts v2 API as described in /connect/accounts-v2. The pages below describe legacy v1 account types and are only relevant for existing v1 integrations.
+For new integrations, use the Accounts v2 API as described in /connect/accounts-v2. The account capabilities guide covers both Accounts v1 and Accounts v2. The account type guides describe legacy v1 integrations.
 
 - [Account capabilities and configurations](https://docs.stripe.com/connect/account-capabilities.md): Learn how Connect capabilities work and how requested capabilities affect verification requirements and what a connected account can do.
 - [Connected account types](https://docs.stripe.com/connect/accounts.md): (Legacy) Learn about older v1 connected account configurations. For new integrations, use Accounts v2.
@@ -531,7 +531,6 @@ Use Stripe Identity to confirm the identity of global users to prevent fraud, st
 - [Explain Identity to your customers](https://docs.stripe.com/identity/explaining-identity.md): Answer customer questions about ID verification and Stripe Identity.
 - [The Verification Sessions API](https://docs.stripe.com/identity/verification-sessions.md): Learn more about the Verification Sessions API that powers Stripe Identity.
 - [Before going live](https://docs.stripe.com/identity/before-going-live.md): Best practices to build a production-ready Stripe Identity integration.
-- [Identity verification (redirect)](https://docs.stripe.com/samples/identity/redirect.md)
 
 ## Atlas
 
@@ -597,7 +596,7 @@ Automate your accrual accounting process with Stripe Revenue Recognition. Revenu
 
 ## Treasury for Platforms
 
-Treasury for Platforms is Stripe’s embedded finance API (v2) for Connect platforms. It lets you embed bank accounts, money movement, and card issuing into your product using Stripe’s infrastructure and bank partners. This is the current and recommended Treasury integration path — always use these v2 docs unless the user explicitly requests the legacy v1 Treasury API (legacy v1 docs are available at [Treasury for platforms v1](https://docs.stripe.com/treasury/connect.md)).
+Treasury for Platforms is Stripe’s embedded finance API (v2) for Connect platforms. It lets you embed bank accounts, money movement, and card issuing into your product using Stripe’s infrastructure and bank partners. This is the current and recommended Treasury integration path — always use these v2 docs unless the user explicitly requests the legacy v1 Treasury API (legacy v1 docs are available at [Treasury for platforms v1](https://docs.stripe.com/treasury/connect/legacy/v1.md)).
 
 ### Get started
 
@@ -735,7 +734,7 @@ Learn more about Terminal’s [features](https://docs.stripe.com/terminal.md#fea
 - [Build and test your app](https://docs.stripe.com/terminal/features/apps-on-devices/build.md): Learn how to build and test your app using a DevKit.
 - [Stripe Terminal mobile readers](https://docs.stripe.com/terminal/mobile-readers.md): Learn about Stripe pre-certified in-person payment mobile readers.
 - [BBPOS WisePad 3](https://docs.stripe.com/terminal/readers/bbpos-wisepad3.md): Learn about the BBPOS WisePad 3 reader.
-- [Terminal SDK migration guide](https://docs.stripe.com/terminal/references/sdk-migration-guide.md): Learn how to migrate to version 5.0.0 of the Stripe Terminal SDK.
+- [Terminal SDK migration guide](https://docs.stripe.com/terminal/references/sdk-migration-guide.md): Learn how to migrate to version 6.0.0 of the Stripe Terminal SDK.
 - [Tap to Pay](https://docs.stripe.com/terminal/payments/setup-reader/tap-to-pay.md): Accept in-person contactless payments on a compatible iPhone or Android device without a separate reader.
 - [Select a reader](https://docs.stripe.com/terminal/payments/setup-reader.md): Compare Terminal readers and Tap to Pay by features, payment methods, integration support, and country availability.
 - [Set up your Terminal integration](https://docs.stripe.com/terminal/payments/setup-integration.md): Set up a server-driven, JavaScript, iOS, Android, or React Native Stripe Terminal integration.
