@@ -1,6 +1,6 @@
 # Index — Docs
 Source: https://docs.stripe.com/llms.txt
-Pages: 554
+Pages: 555
 
 | Path | First heading |
 |---|---|
@@ -360,6 +360,7 @@ Pages: 554
 | [payouts.md](https://docs.stripe.com/payouts.md) | Receive payouts |
 | [products-prices/overview.md](https://docs.stripe.com/products-prices/overview.md) | Overview |
 | [products-prices/pricing-models.md](https://docs.stripe.com/products-prices/pricing-models.md) | Recurring pricing models |
+| [products-prices.md](https://docs.stripe.com/products-prices.md) | Products and price |
 | [projects.md](https://docs.stripe.com/projects.md) | Stripe Projects CLI |
 | [radar/analytics/fraud-insights.md](https://docs.stripe.com/radar/analytics/fraud-insights.md) | Fraud insights |
 | [radar/analytics.md](https://docs.stripe.com/radar/analytics.md) | Radar analytics center |
